@@ -1,0 +1,7 @@
+ArrayTaskID method func
+1 autohomotopy tray
+2 autohomotopy holdertable
+3 autohomotopy schaffer4
+4 pinns tray
+5 pinns holdertable
+6 pinns schaffer4
