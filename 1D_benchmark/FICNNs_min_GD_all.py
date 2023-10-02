@@ -26,7 +26,7 @@ class FICNNs(nn.Module):
 # Define the domain
 x_min = -1
 x_max = 3
-t_max = 50
+t_max = 20
 t_set = np.linspace(0, t_max, t_max) # [0, 1, ..., 50]
 x = torch.linspace(x_min, x_max, 1000)
 num_points = 10000
