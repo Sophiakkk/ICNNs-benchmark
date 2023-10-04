@@ -51,7 +51,7 @@ class ICNNsTrainer(object):
                  num_steps: int = 10000,
                  num_grids: int = 100,
                  lr: float = 0.001,
-                 device: torch.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+                 device: torch.device = torch.device("cpu")
                  ):
         self.tmax = tmax        # the maximum value of t
         self.lr = lr
@@ -162,15 +162,13 @@ class ICNNs_Evaluator(object):
         self.initial_x = np.random.uniform(self.xmin, self.xmax, size=(1,2))
 
     def get_grad(self, x):
-        T = torch.tensor([[self.tmax]], dtype=torch.float32)
-        input = torch.cat((x,T),1).requires_grad_(True)
+        input = x.clone().requires_grad_(True)
         u = self.net(input)
-        with torch.no_grad():
-            grad_x = torch.autograd.grad(u, input)[0][0][:2]
+        grad_x = torch.autograd.grad(u, input)[0][0][:2].clone().detach()
         return grad_x
 
     def evaluate(self):
-        x = torch.tensor(self.initial_x, dtype=torch.float32)
+        x = torch.tensor(self.initial_x, requires_grad=False, dtype=torch.float32)
         # perform gradient descent
         for i in range(self.total_iterations):
             grad_x = self.get_grad(x)
