@@ -28,7 +28,7 @@ class FICNNs(nn.Module):
         z_3 = self.fc2_y(y)+F.linear(z_1, torch.exp(self.z2_W), None)
         return z_3
     
-model = torch.load('./models/1d_benchmark.pt')
+model = torch.load('./models/1d_benchmark_T60.pt')
 model.eval()
 
 # t = torch.tensor(50)
@@ -76,7 +76,7 @@ for seed in SEED_list:
     print("final x is: ",x_opt)
     errorx = np.linalg.norm(x_opt-x_optimal)
     errory = np.linalg.norm(gramacy_and_lee(x_opt)- gramacy_and_lee(x_optimal))
-    with open("./results/autohomotopy_1d_eval.txt", "a") as f:
+    with open("./results/ICNNs_1d_eval.txt", "a") as f:
         f.write("seed {}: error (input) is {}, error (output) is {}\n".format(seed, errorx, errory))
 
 

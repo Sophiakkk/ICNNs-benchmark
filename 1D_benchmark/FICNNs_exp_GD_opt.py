@@ -116,7 +116,7 @@ for i in range(t_max+1):
             if k % 1000 == 0:
                 print(f'Re-training Epoch [{k}/{num_epochs}], Loss: {loss.item():.8f}')
 
-torch.save(model, './models/1d_benchmark.pt')
+torch.save(model, './models/1d_benchmark_T{}.pt'.format(t_max))
 
 plt.plot(x.detach().numpy(),u_initial.detach().numpy(),label='Initial Func')
 plt.legend()
