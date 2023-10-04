@@ -8,7 +8,7 @@ total_num = len(func_list)*len(method_list)
 id = 1
 
 
-with open("multiple_config.txt","w") as f:
+with open("benchmark_config.txt","w") as f:
     f.write("ArrayTaskID"+" "+"method"+" "+"func")
     for method in method_list:
         for func in func_list:
