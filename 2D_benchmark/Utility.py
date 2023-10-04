@@ -106,7 +106,7 @@ class ICNNsTrainer(object):
                     x_opt = (x_opt - self.lr * grad).clone().detach().requires_grad_(True)
 
             print("optima is: ",x_opt)
-            final_opt = x_opt.clone().detach().cpu()
+            final_opt = x_opt.clone().detach().cpu().numpy()
             u_x = torch.tensor(self.init_func(final_opt[:,0],final_opt[:,1]),dtype=torch.float32,requires_grad=False).to(self.device)
             f_x = self.net(x_opt).data
 
