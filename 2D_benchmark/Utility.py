@@ -107,7 +107,7 @@ class ICNNsTrainer(object):
 
             print("optima is: ",x_opt)
             final_opt = x_opt.clone().detach().cpu()
-            u_x = self.init_func(final_opt[:,0],final_opt[:,1])
+            u_x = self.init_func(final_opt[:,0],final_opt[:,1]).to(self.device)
             f_x = self.net(x_opt).data
 
             if f_x < u_x:
