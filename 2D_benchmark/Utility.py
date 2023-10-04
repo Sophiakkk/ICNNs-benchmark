@@ -47,7 +47,7 @@ class ICNNsTrainer(object):
                  init_func_name: str,
                  method: str,
                  tmax: int = 50,
-                 num_epochs: int = 10000,
+                 num_epochs: int = 10,
                  num_steps: int = 10000,
                  num_grids: int = 100,
                  lr: float = 0.001,
