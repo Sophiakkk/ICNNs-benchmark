@@ -32,7 +32,7 @@ class FICNNs(nn.Module):
 # Define the domain
 x_min = -1
 x_max = 3
-t_max = 20
+t_max = 60
 x = np.linspace(x_min, x_max, 1000)
 num_points = 10000
 
@@ -60,7 +60,6 @@ for i in range(t_max+1):
         if i==0:
             loss = torch.mean((u - u_initial)**2, dim=0) # force the neural net learn the function
         else:
-            ut = torch.minimum(u_initial,u)
             loss = torch.mean((u - ut)**2, dim=0)
         
         # Backpropagation
@@ -73,8 +72,10 @@ for i in range(t_max+1):
         if epoch % 1000 == 0:
             print(f'Epoch [{epoch}/{num_epochs}], Loss: {loss.item():.8f}')
 
-    if i % 5 == 0:
+    if i % 20 == 0:
         plt.plot(x.detach().numpy(),u.detach().numpy(),label='FICNNs at t='+str(i))
+
+    ut = torch.minimum(u_initial,u.detach())
 
     # Do GD
     x_opt = torch.tensor(np.random.uniform(x_min,x_max), requires_grad=False).expand(1,1)
@@ -119,5 +120,5 @@ for i in range(t_max+1):
 plt.plot(x.detach().numpy(),u_initial.detach().numpy(),label='Initial Func')
 plt.legend()
 plt.title("FICNNs with Exponential Weights and GD")
-plt.savefig("./figures/FICNNs_exp_min_GD_all.png")
+plt.savefig("./figures/FICNNs_exp_min_GD_all_t_{}.png".format(t_max))
 plt.show()

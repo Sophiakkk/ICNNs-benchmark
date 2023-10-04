@@ -55,7 +55,6 @@ for i in range(t_max+1):
         if i==0:
             loss = torch.mean((u - u_initial)**2, dim=0) # force the neural net learn the function
         else:
-            ut = torch.minimum(u_initial,u)
             loss = torch.mean((u - ut)**2, dim=0)
         
         # Backpropagation
@@ -76,6 +75,8 @@ for i in range(t_max+1):
 
     if i % 5 == 0:
         plt.plot(x.detach().numpy(),u.detach().numpy(),label='FICNNs at t='+str(i))
+    
+    ut = torch.minimum(u_initial,u).detach()
 
     # Do GD
     x_opt = torch.tensor(np.random.uniform(x_min,x_max), requires_grad=False).expand(1,1)
