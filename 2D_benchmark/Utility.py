@@ -103,13 +103,12 @@ class ICNNsTrainer(object):
 
                 # Perform gradient descent update
                 with torch.no_grad():
-                    x_opt = (x_opt - self.lr * grad).detach().requires_grad_(True)
+                    x_opt = (x_opt - self.lr * grad).clone().detach().requires_grad_(True)
 
             print("optima is: ",x_opt)
-            u_x = self.init_func(x_opt.cpu()[:,0],x_opt.cpu()[:,1])
+            final_opt = x_opt.clone().detach().cpu()
+            u_x = self.init_func(final_opt[:,0],final_opt[:,1])
             f_x = self.net(x_opt).data
-
-            x_train = x_opt.clone().requires_grad_(True)
 
             if f_x < u_x:
                 print("fx is: ",f_x)
@@ -117,7 +116,7 @@ class ICNNsTrainer(object):
                 for k in range (self.num_epochs):
                     self.optimizer.zero_grad()
 
-                    y_train = self.net(x_train)
+                    y_train = self.net(x_opt)
                     loss = torch.norm(y_train - u_x) # force the neural net learn the function
                     
                     # Backpropagation
