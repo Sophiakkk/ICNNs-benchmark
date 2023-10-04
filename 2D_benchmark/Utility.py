@@ -107,7 +107,7 @@ class ICNNsTrainer(object):
 
             print("optima is: ",x_opt)
             final_opt = x_opt.clone().detach().cpu()
-            u_x = self.init_func(final_opt[:,0],final_opt[:,1]).to(self.device)
+            u_x = torch.tensor(self.init_func(final_opt[:,0],final_opt[:,1]),dtype=torch.float32,requires_grad=False).to(self.device)
             f_x = self.net(x_opt).data
 
             if f_x < u_x:
