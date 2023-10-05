@@ -12,7 +12,7 @@ for method in method_list:
     for func in func_list:
         metric_list_x = []
         metric_list_y = []
-        with open('{}_{}_eval.txt'.format(method, func), 'r') as file:
+        with open('{}_{}_T{}_eval.txt'.format(method, func), 'r') as file:
             for line in file:
                 if len(re.findall("\d+\.\d+", line))==2:
                     metric_list_x.append(float(re.findall("\d+\.\d+", line)[0]))

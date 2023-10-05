@@ -1,4 +1,0 @@
-Method: ICNNs
-Function: eggholder
-Max Timestep: 50
-Running Time: 1770.661730011925

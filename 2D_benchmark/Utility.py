@@ -26,19 +26,23 @@ class FICNNs(nn.Module):
         super(FICNNs, self).__init__()
         self.fc0_y = nn.Linear(2, 32)
         self.fc1_y = nn.Linear(2, 32)
-        self.fc2_y = nn.Linear(2, 1)
+        self.fc2_y = nn.Linear(2, 32)
+        self.fc_last_y = nn.Linear(2, 1)
 
         # Set weights and bias for z
         self.z1_W = Parameter(torch.empty((32, 32))).requires_grad_(True)
         init.kaiming_uniform_(self.z1_W, a=math.sqrt(5))
-        self.z2_W = Parameter(torch.empty((1, 32))).requires_grad_(True)
+        self.z2_W = Parameter(torch.empty((32, 32))).requires_grad_(True)
         init.kaiming_uniform_(self.z2_W, a=math.sqrt(5))
+        self.z_last_W = Parameter(torch.empty((1, 32))).requires_grad_(True)
+        init.kaiming_uniform_(self.z_last_W, a=math.sqrt(5))
     
     def forward(self,y):
         z_1 = torch.relu(self.fc0_y(y))
         z_2 = torch.relu(self.fc1_y(y)+F.linear(z_1, torch.exp(self.z1_W), None))
-        z_3 = self.fc2_y(y)+F.linear(z_1, torch.exp(self.z2_W), None)
-        return z_3
+        z_3 = torch.relu(self.fc2_y(y)+F.linear(z_2, torch.exp(self.z2_W), None))
+        z_final = self.fc_last_y(y)+F.linear(z_3, torch.exp(self.z_last_W), None)
+        return z_final
     
 class ICNNsTrainer(object):
     def __init__(self,

@@ -1,4 +1,0 @@
-Method: ICNNs
-Function: ackley
-Max Timestep: 50
-Running Time: 1872.0434491410851
