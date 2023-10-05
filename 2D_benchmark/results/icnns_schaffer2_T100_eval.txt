@@ -1,0 +1,11 @@
+Evaluation results for icnns with schaffer2 T 100:
+seed 1: error (input) is 47.00828210053614, error (output) is 0.5472440123558044
+seed 2: error (input) is 95.59682699255346, error (output) is 0.49541541934013367
+seed 3: error (input) is 42.77949712757066, error (output) is 0.5189788937568665
+seed 4: error (input) is 93.80748208524463, error (output) is 0.4970266819000244
+seed 5: error (input) is 92.61696072200738, error (output) is 0.5021117329597473
+seed 6: error (input) is 85.38625079936944, error (output) is 0.49585577845573425
+seed 7: error (input) is 101.4979974140637, error (output) is 0.4968767762184143
+seed 8: error (input) is 119.77020395758572, error (output) is 0.49808499217033386
+seed 9: error (input) is 97.84965463782532, error (output) is 0.5039394497871399
+seed 10: error (input) is 110.07780754465, error (output) is 0.5024779438972473

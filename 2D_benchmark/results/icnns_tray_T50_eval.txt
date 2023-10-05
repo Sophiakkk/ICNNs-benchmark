@@ -1,11 +1,11 @@
 Evaluation results for icnns with tray T 50:
-seed 1: error (input) is 5.20782656978974, error (output) is inf
-seed 2: error (input) is 7.15140265470623, error (output) is inf
-seed 3: error (input) is 5.483585386363956, error (output) is inf
-seed 4: error (input) is 9.956688228880829, error (output) is inf
-seed 5: error (input) is 9.07244091170965, error (output) is inf
-seed 6: error (input) is 8.809602237796804, error (output) is inf
-seed 7: error (input) is 9.378010039128245, error (output) is inf
-seed 8: error (input) is 13.072950524332956, error (output) is inf
-seed 9: error (input) is 7.65940454868489, error (output) is inf
-seed 10: error (input) is 9.809445830951494, error (output) is inf
+seed 1: error (input) is 5.240273606384511, error (output) is inf
+seed 2: error (input) is 7.4817304167430505, error (output) is inf
+seed 3: error (input) is 5.405376670043783, error (output) is inf
+seed 4: error (input) is 9.980307840225954, error (output) is inf
+seed 5: error (input) is 9.143154478835529, error (output) is inf
+seed 6: error (input) is 8.875380942736133, error (output) is inf
+seed 7: error (input) is 9.313918833104996, error (output) is inf
+seed 8: error (input) is 13.071390484644462, error (output) is inf
+seed 9: error (input) is 7.550808664867621, error (output) is inf
+seed 10: error (input) is 9.91116210978535, error (output) is inf

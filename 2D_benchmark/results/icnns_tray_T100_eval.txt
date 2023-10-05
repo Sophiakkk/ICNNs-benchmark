@@ -1,0 +1,11 @@
+Evaluation results for icnns with tray T 100:
+seed 1: error (input) is 5.167024462893637, error (output) is inf
+seed 2: error (input) is 7.142614197111997, error (output) is inf
+seed 3: error (input) is 5.576092730526153, error (output) is inf
+seed 4: error (input) is 10.081888923718282, error (output) is inf
+seed 5: error (input) is 9.128950740645545, error (output) is inf
+seed 6: error (input) is 8.75055216821059, error (output) is inf
+seed 7: error (input) is 9.210274512284874, error (output) is inf
+seed 8: error (input) is 13.064709025009096, error (output) is inf
+seed 9: error (input) is 7.597145057026773, error (output) is inf
+seed 10: error (input) is 9.833311616713045, error (output) is inf
