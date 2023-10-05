@@ -9,7 +9,7 @@ import timeit
 parser = argparse.ArgumentParser()
 parser.add_argument("-n","--num_iter", type = int, default = 10000)
 parser.add_argument("-beta", "--step_size", type = float, default = 0.001)
-parser.add_argument("-T", "--max_timestep", type = int, default = 50)
+parser.add_argument("-T", "--max_timestep", type = int, default = 100)
 args = parser.parse_args()
 
 # Parameters
@@ -33,7 +33,7 @@ for method_name in method_list:
                 eval_net.load_state_dict(torch.load("./models/{}_{}_T{}_t50.pth".format(method_name,func_name,args.max_timestep),map_location=torch.device('cpu')))
                 algorithm_evaluator = ICNNs_Evaluator(net=eval_net,
                                                             x_range=x_range, 
-                                                            tmax=50,
+                                                            tmax=100,
                                                             init_func_name = func_name, 
                                                             seed=seed,
                                                             x_opt = x_opt,

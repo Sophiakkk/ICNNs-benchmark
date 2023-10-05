@@ -70,7 +70,7 @@ class ICNNsTrainer(object):
                  x_range: np.ndarray,
                  init_func_name: str,
                  method: str,
-                 tmax: int = 50,
+                 tmax: int,
                  num_epochs: int = 10000,
                  num_steps: int = 10000,
                  num_grids: int = 100,

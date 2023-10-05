@@ -8,7 +8,7 @@ import timeit
 parser = argparse.ArgumentParser()
 parser.add_argument("-m","--method_name", type = str, default = "ICNNs")
 parser.add_argument("-f","--func_name", type = str, default = "ackley")
-parser.add_argument("-T", "--max_timestep", type = int, default = 50)
+parser.add_argument("-T", "--max_timestep", type = int, default = 100)
 args = parser.parse_args()
 
 # Parameters
@@ -31,7 +31,7 @@ if method_name == 'ICNNs':
 
 stop = timeit.default_timer()
 
-with open ("./results/"+method_name+"_"+func_name+"_train.txt", "w") as f:
+with open ("./results/"+method_name+"_"+func_name+"T{}_train.txt".format(T), "w") as f:
     f.write("Method: "+method_name+"\n")
     f.write("Function: "+func_name+"\n")
     f.write("Max Timestep: "+str(args.max_timestep)+"\n")
