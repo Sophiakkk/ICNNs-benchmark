@@ -26,7 +26,7 @@ class FICNNs(nn.Module):
     def forward(self,y):
         z_1 = torch.relu(self.fc0_y(y))
         z_2 = torch.relu(self.fc1_y(y)+F.linear(z_1, torch.exp(self.z1_W), None))
-        z_3 = self.fc2_y(y)+F.linear(z_1, torch.exp(self.z2_W), None)
+        z_3 = self.fc2_y(y)+F.linear(z_2, torch.exp(self.z2_W), None)
         return z_3
 
 # Define the domain
