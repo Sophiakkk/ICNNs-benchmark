@@ -1,6 +1,6 @@
 Senario: ICNNs
-avg error (input): 0.3679
-std error (input): 0.0007203
-avg error (output): 2.707
-std error (output): 0.02526
+avg error (input): 0.3633
+std error (input): 0.001508
+avg error (output): 2.826
+std error (output): 0.02741
 -----------------------------------------

@@ -28,14 +28,14 @@ class FICNNs(nn.Module):
         z_3 = self.fc2_y(y)+F.linear(z_2, torch.exp(self.z2_W), None)
         return z_3
     
-model = torch.load('./models/1d_benchmark_T20.pt')
+model = torch.load('./models/1d_benchmark_T50.pt')
 model.eval()
 
 SEED_list = [1,2,3,4,5,6,7,8,9,10]
 
 total_iteration = 20000
 beta = 0.001
-T = 20
+T = 50
 
 x_optimal = dyhotomy(0.5, 0.6, 0.0001)
 x_min = -1

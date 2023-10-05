@@ -1,11 +1,11 @@
-Evaluation results with icnns T 20:
-seed 1: error (input) is 0.3674917221069336, error (output) is 2.72343111038208
-seed 2: error (input) is 0.3669095039367676, error (output) is 2.7419683933258057
-seed 3: error (input) is 0.3683243989944458, error (output) is 2.694740056991577
-seed 4: error (input) is 0.3675226867198944, error (output) is 2.7224111557006836
-seed 5: error (input) is 0.36746469140052795, error (output) is 2.72432017326355
-seed 6: error (input) is 0.3674466013908386, error (output) is 2.7249128818511963
-seed 7: error (input) is 0.36891743540763855, error (output) is 2.6727325916290283
-seed 8: error (input) is 0.3674734830856323, error (output) is 2.724031925201416
-seed 9: error (input) is 0.3689405918121338, error (output) is 2.6718456745147705
-seed 10: error (input) is 0.36891981959342957, error (output) is 2.6726415157318115
+Evaluation results with icnns T 50:
+seed 1: error (input) is 0.36509543657302856, error (output) is 2.791740894317627
+seed 2: error (input) is 0.36171504855155945, error (output) is 2.852816343307495
+seed 3: error (input) is 0.36158689856529236, error (output) is 2.854335069656372
+seed 4: error (input) is 0.3617149591445923, error (output) is 2.852816581726074
+seed 5: error (input) is 0.36213937401771545, error (output) is 2.8473756313323975
+seed 6: error (input) is 0.36324653029441833, error (output) is 2.8301916122436523
+seed 7: error (input) is 0.36508649587631226, error (output) is 2.7919561862945557
+seed 8: error (input) is 0.36493122577667236, error (output) is 2.7956552505493164
+seed 9: error (input) is 0.3650408983230591, error (output) is 2.7930514812469482
+seed 10: error (input) is 0.36213916540145874, error (output) is 2.8473784923553467
