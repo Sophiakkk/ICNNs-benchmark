@@ -72,7 +72,7 @@ for i in range(t_max+1):
         if epoch % 1000 == 0:
             print(f'Epoch [{epoch}/{num_epochs}], Loss: {loss.item():.8f}')
 
-    if i % 20 == 0:
+    if i % 5 == 0:
         plt.plot(x.detach().numpy(),u.detach().numpy(),label='FICNNs at t='+str(i))
     
     ut = torch.minimum(u_initial,u.detach())
