@@ -30,10 +30,10 @@ for method_name in method_list:
                 f.write("Evaluation results for {} with {} T {}:\n".format(method_name,func_name,args.max_timestep))
             for seed in seed_list:
                 eval_net = FICNNs()
-                eval_net.load_state_dict(torch.load("./models/{}_{}_T{}_t50.pth".format(method_name,func_name,args.max_timestep),map_location=torch.device('cpu')))
+                eval_net.load_state_dict(torch.load("./models/{}_{}_T{}_t{}.pth".format(method_name,func_name,args.max_timestep,args.max_timestep),map_location=torch.device('cpu')))
                 algorithm_evaluator = ICNNs_Evaluator(net=eval_net,
                                                             x_range=x_range, 
-                                                            tmax=100,
+                                                            tmax=args.max_timestep,
                                                             init_func_name = func_name, 
                                                             seed=seed,
                                                             x_opt = x_opt,
