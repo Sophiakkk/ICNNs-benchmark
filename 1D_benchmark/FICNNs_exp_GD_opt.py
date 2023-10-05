@@ -32,7 +32,7 @@ class FICNNs(nn.Module):
 # Define the domain
 x_min = -1
 x_max = 3
-t_max = 20
+t_max = 50
 x = np.linspace(x_min, x_max, 1000)
 num_points = 10000
 
@@ -71,9 +71,6 @@ for i in range(t_max+1):
         # Print the loss
         if epoch % 1000 == 0:
             print(f'Epoch [{epoch}/{num_epochs}], Loss: {loss.item():.8f}')
-
-    if i % 5 == 0:
-        plt.plot(x.detach().numpy(),u.detach().numpy(),label='FICNNs at t='+str(i))
     
     ut = torch.minimum(u_initial,u.detach())
     
@@ -115,6 +112,9 @@ for i in range(t_max+1):
             # Print the loss
             if k % 1000 == 0:
                 print(f'Re-training Epoch [{k}/{num_epochs}], Loss: {loss.item():.8f}')
+    
+    if i % 10 == 0:
+        plt.plot(x.detach().numpy(),u.detach().numpy(),label='FICNNs at t='+str(i))
 
 torch.save(model, './models/1d_benchmark_T{}.pt'.format(t_max))
 

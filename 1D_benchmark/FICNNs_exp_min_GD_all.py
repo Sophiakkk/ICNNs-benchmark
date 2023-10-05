@@ -72,9 +72,6 @@ for i in range(t_max+1):
         if epoch % 1000 == 0:
             print(f'Epoch [{epoch}/{num_epochs}], Loss: {loss.item():.8f}')
 
-    if i % 5 == 0:
-        plt.plot(x.detach().numpy(),u.detach().numpy(),label='FICNNs at t='+str(i))
-
     ut = torch.minimum(u_initial,u.detach())
 
     # Do GD
@@ -116,6 +113,9 @@ for i in range(t_max+1):
             # Print the loss
             if k % 1000 == 0:
                 print(f'Re-training Epoch [{k}/{num_epochs}], Loss: {loss.item():.8f}')
+
+    if i % 5 == 0:
+        plt.plot(x.detach().numpy(),u.detach().numpy(),label='FICNNs at t='+str(i))
 
 plt.plot(x.detach().numpy(),u_initial.detach().numpy(),label='Initial Func')
 plt.legend()
