@@ -5,9 +5,9 @@ import math
 tmax = 50
 method_list = ['icnns']
 func_list = ["ackley","bukin","dropwave","eggholder","griewank","levy",
-             "levy13","rastrigin","schaffer2","schwefel",
+             "levy13","rastrigin","schaffer2","schwefel", "langermann",
              "tray", "holdertable", "schaffer4", "shubert"]
-# "langermann",
+
 seed_list = [1,2,3,4,5,6,7,8,9,10]
 
 for method in method_list:
