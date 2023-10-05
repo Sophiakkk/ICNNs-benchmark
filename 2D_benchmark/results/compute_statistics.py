@@ -2,17 +2,19 @@ import re
 import numpy as np
 import math
 
+tmax = 50
 method_list = ['icnns']
-func_list = ["ackley","bukin","dropwave","eggholder","griewank","langermann","levy",
+func_list = ["ackley","bukin","dropwave","eggholder","griewank","levy",
              "levy13","rastrigin","schaffer2","schwefel",
              "tray", "holdertable", "schaffer4", "shubert"]
+# "langermann",
 seed_list = [1,2,3,4,5,6,7,8,9,10]
 
 for method in method_list:
     for func in func_list:
         metric_list_x = []
         metric_list_y = []
-        with open('{}_{}_T{}_eval.txt'.format(method, func), 'r') as file:
+        with open('{}_{}_T{}_eval.txt'.format(method, func,tmax), 'r') as file:
             for line in file:
                 if len(re.findall("\d+\.\d+", line))==2:
                     metric_list_x.append(float(re.findall("\d+\.\d+", line)[0]))

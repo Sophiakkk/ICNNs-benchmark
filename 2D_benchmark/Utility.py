@@ -32,17 +32,37 @@ class FICNNs(nn.Module):
         # Set weights and bias for z
         self.z1_W = Parameter(torch.empty((32, 32))).requires_grad_(True)
         init.kaiming_uniform_(self.z1_W, a=math.sqrt(5))
-        self.z2_W = Parameter(torch.empty((32, 32))).requires_grad_(True)
-        init.kaiming_uniform_(self.z2_W, a=math.sqrt(5))
         self.z_last_W = Parameter(torch.empty((1, 32))).requires_grad_(True)
         init.kaiming_uniform_(self.z_last_W, a=math.sqrt(5))
     
     def forward(self,y):
         z_1 = torch.relu(self.fc0_y(y))
         z_2 = torch.relu(self.fc1_y(y)+F.linear(z_1, torch.exp(self.z1_W), None))
-        z_3 = torch.relu(self.fc2_y(y)+F.linear(z_2, torch.exp(self.z2_W), None))
-        z_final = self.fc_last_y(y)+F.linear(z_3, torch.exp(self.z_last_W), None)
+        z_final = self.fc_last_y(y)+F.linear(z_2, torch.exp(self.z_last_W), None)
         return z_final
+    
+# class FICNNs(nn.Module):
+#     def __init__(self):
+#         super(FICNNs, self).__init__()
+#         self.fc0_y = nn.Linear(2, 32)
+#         self.fc1_y = nn.Linear(2, 32)
+#         self.fc2_y = nn.Linear(2, 32)
+#         self.fc_last_y = nn.Linear(2, 1)
+
+#         # Set weights and bias for z
+#         self.z1_W = Parameter(torch.empty((32, 32))).requires_grad_(True)
+#         init.kaiming_uniform_(self.z1_W, a=math.sqrt(5))
+#         self.z2_W = Parameter(torch.empty((32, 32))).requires_grad_(True)
+#         init.kaiming_uniform_(self.z2_W, a=math.sqrt(5))
+#         self.z_last_W = Parameter(torch.empty((1, 32))).requires_grad_(True)
+#         init.kaiming_uniform_(self.z_last_W, a=math.sqrt(5))
+    
+#     def forward(self,y):
+#         z_1 = torch.relu(self.fc0_y(y))
+#         z_2 = torch.relu(self.fc1_y(y)+F.linear(z_1, torch.exp(self.z1_W), None))
+#         z_3 = torch.relu(self.fc2_y(y)+F.linear(z_2, torch.exp(self.z2_W), None))
+#         z_final = self.fc_last_y(y)+F.linear(z_3, torch.exp(self.z_last_W), None)
+#         return z_final
     
 class ICNNsTrainer(object):
     def __init__(self,
@@ -180,5 +200,5 @@ class ICNNs_Evaluator(object):
             x = x - self.step_size*grad_x
         errorx = np.linalg.norm(x-self.x_opt)
         errory = np.linalg.norm(self.init_func(x[0][0],x[0][1])- self.init_func(self.x_opt[0],self.x_opt[1]))
-        with open("./results/{}_{}_eval.txt".format(self.method_name,self.init_func_name), "a") as f:
+        with open("./results/{}_{}_T{}_eval.txt".format(self.method_name,self.init_func_name,self.tmax), "a") as f:
             f.write("seed {}: error (input) is {}, error (output) is {}\n".format(self.seed, errorx, errory))

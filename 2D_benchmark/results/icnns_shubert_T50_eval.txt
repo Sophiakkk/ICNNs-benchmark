@@ -1,0 +1,11 @@
+Evaluation results for icnns with shubert T 50:
+seed 1: error (input) is 1.7124107677377298, error (output) is 170.7854766845703
+seed 2: error (input) is 4.995421932741901, error (output) is 186.7266082763672
+seed 3: error (input) is 2.3980349446872427, error (output) is 188.68341064453125
+seed 4: error (input) is 3.212166094297717, error (output) is 187.1422119140625
+seed 5: error (input) is 1.130000188339768, error (output) is 130.50045776367188
+seed 6: error (input) is 1.552775045977118, error (output) is 228.50282287597656
+seed 7: error (input) is 2.6723722689625693, error (output) is 191.6427001953125
+seed 8: error (input) is 5.970953976111792, error (output) is 177.8807830810547
+seed 9: error (input) is 5.854795990161029, error (output) is 187.4611358642578
+seed 10: error (input) is 4.626219172151106, error (output) is 191.32615661621094

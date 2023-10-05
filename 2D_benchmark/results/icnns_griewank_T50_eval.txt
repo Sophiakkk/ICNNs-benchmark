@@ -1,0 +1,11 @@
+Evaluation results for icnns with griewank T 50:
+seed 1: error (input) is 281.1878284581259, error (output) is 20.82549476623535
+seed 2: error (input) is 571.5692758267699, error (output) is 82.6812515258789
+seed 3: error (input) is 255.6293649694044, error (output) is 18.097450256347656
+seed 4: error (input) is 560.8425049365732, error (output) is 79.84913635253906
+seed 5: error (input) is 553.4434024730368, error (output) is 77.29872131347656
+seed 6: error (input) is 510.2943013509135, error (output) is 65.75666809082031
+seed 7: error (input) is 607.0829809350946, error (output) is 92.86211395263672
+seed 8: error (input) is 715.7385146012851, error (output) is 128.07847595214844
+seed 9: error (input) is 585.7239935274628, error (output) is 86.7614974975586
+seed 10: error (input) is 657.8386230026391, error (output) is 108.25749206542969

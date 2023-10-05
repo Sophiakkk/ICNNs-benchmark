@@ -1,0 +1,11 @@
+Evaluation results for icnns with rastrigin T 50:
+seed 1: error (input) is 1.7998090142048147, error (output) is 33.89063262939453
+seed 2: error (input) is 1.800600771834743, error (output) is 33.83800506591797
+seed 3: error (input) is 1.8006250516590319, error (output) is 33.81235122680664
+seed 4: error (input) is 1.800866617229375, error (output) is 33.79896926879883
+seed 5: error (input) is 1.8007414380008062, error (output) is 33.81607437133789
+seed 6: error (input) is 1.8008481149536122, error (output) is 33.793670654296875
+seed 7: error (input) is 1.8005207543088866, error (output) is 33.84281921386719
+seed 8: error (input) is 1.8003865997625823, error (output) is 33.83799743652344
+seed 9: error (input) is 1.8005386106328565, error (output) is 33.83678436279297
+seed 10: error (input) is 1.800444660334958, error (output) is 33.8277587890625
