@@ -1,0 +1,4 @@
+Method: ICNNs
+Function: griewank
+Max Timestep: 100
+Running Time: 9676.033819274046
