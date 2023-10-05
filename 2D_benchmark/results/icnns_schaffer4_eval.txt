@@ -1,0 +1,11 @@
+Evaluation results for icnns with schaffer4:
+seed 1: error (input) is 46.593716071921165, error (output) is 0.252521276473999
+seed 2: error (input) is 95.44312721578376, error (output) is 0.20553967356681824
+seed 3: error (input) is 43.086997954399514, error (output) is 0.25509506464004517
+seed 4: error (input) is 95.05621252301407, error (output) is 0.21247601509094238
+seed 5: error (input) is 91.89269921867796, error (output) is 0.21271800994873047
+seed 6: error (input) is 86.52485511186302, error (output) is 0.206152081489563
+seed 7: error (input) is 100.47637227466907, error (output) is 0.20584189891815186
+seed 8: error (input) is 120.55560679986792, error (output) is 0.20933973789215088
+seed 9: error (input) is 96.5965749462159, error (output) is 0.20579379796981812
+seed 10: error (input) is 110.68179566036537, error (output) is 0.20762521028518677

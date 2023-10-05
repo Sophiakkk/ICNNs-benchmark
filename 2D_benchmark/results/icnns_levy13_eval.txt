@@ -1,0 +1,11 @@
+Evaluation results for icnns with levy13:
+seed 1: error (input) is 1.4671206843773843, error (output) is 2.923048496246338
+seed 2: error (input) is 1.4670284175829278, error (output) is 2.9241745471954346
+seed 3: error (input) is 1.4672175876033238, error (output) is 2.925739049911499
+seed 4: error (input) is 1.4647319471940832, error (output) is 2.8929686546325684
+seed 5: error (input) is 1.4658193555867067, error (output) is 2.9119644165039062
+seed 6: error (input) is 1.4666300795008862, error (output) is 2.914923906326294
+seed 7: error (input) is 1.4643716650812117, error (output) is 2.8937788009643555
+seed 8: error (input) is 1.4666838257867247, error (output) is 2.9196345806121826
+seed 9: error (input) is 1.4648527066448296, error (output) is 2.897184133529663
+seed 10: error (input) is 1.466230252308818, error (output) is 2.9156947135925293

@@ -1,0 +1,11 @@
+Evaluation results for icnns with langermann:
+seed 1: error (input) is 8.03665508253669, error (output) is 1.0810729888274186
+seed 2: error (input) is 5.987455838244581, error (output) is 1.2600737732261567
+seed 3: error (input) is 6.976170688825967, error (output) is 1.078691957196297
+seed 4: error (input) is 3.4980198304810757, error (output) is 1.026360573256386
+seed 5: error (input) is 10.495760638870719, error (output) is 1.0809387528531869
+seed 6: error (input) is 1.8937343933690993, error (output) is 1.266064613177503
+seed 7: error (input) is 11.164179233570707, error (output) is 1.0809384447063102
+seed 8: error (input) is 7.808180910168213, error (output) is 1.1151376468152865
+seed 9: error (input) is 10.327043941584165, error (output) is 1.0764819750311836
+seed 10: error (input) is 2.7847905858885937, error (output) is 1.0333311840813866
