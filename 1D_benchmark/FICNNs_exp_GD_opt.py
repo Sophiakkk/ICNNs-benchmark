@@ -32,7 +32,7 @@ class FICNNs(nn.Module):
 # Define the domain
 x_min = -1
 x_max = 3
-t_max = 60
+t_max = 20
 x = np.linspace(x_min, x_max, 1000)
 num_points = 10000
 
@@ -121,5 +121,5 @@ torch.save(model, './models/1d_benchmark_T{}.pt'.format(t_max))
 plt.plot(x.detach().numpy(),u_initial.detach().numpy(),label='Initial Func')
 plt.legend()
 plt.title("FICNNs with Exponential Weights and GD")
-plt.savefig("./figures/FICNNs_exp_min_GD_opt_t_{}.png".format(t_max))
+plt.savefig("./figures/FICNNs_exp_min_GD_opt_T_{}.png".format(t_max))
 plt.show()

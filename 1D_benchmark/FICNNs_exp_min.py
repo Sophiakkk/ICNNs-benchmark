@@ -47,7 +47,7 @@ num_epochs = 10000
 u_initial = gramacy_and_lee(x.detach().numpy())
 u_initial = torch.tensor(u_initial,requires_grad=False)
 
-for i in range(21):
+for i in range(t_max+1):
     for epoch in range(num_epochs):
         # Zero gradients
         optimizer.zero_grad()
