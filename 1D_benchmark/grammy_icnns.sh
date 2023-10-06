@@ -12,3 +12,4 @@ T_list=(50 100)
 for tmax in ${T_list[@]}
 do
     python train.py -T $tmax
+done
