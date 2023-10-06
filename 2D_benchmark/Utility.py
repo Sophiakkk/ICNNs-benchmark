@@ -71,11 +71,11 @@ class ICNNsTrainer(object):
                  init_func_name: str,
                  method: str,
                  tmax: int,
+                 device: torch.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu'),
                  num_epochs: int = 10000,
                  num_steps: int = 10000,
                  num_grids: int = 100,
                  lr: float = 0.001,
-                 device: torch.device = torch.device("cpu")
                  ):
         self.tmax = tmax        # the maximum value of t
         self.lr = lr
