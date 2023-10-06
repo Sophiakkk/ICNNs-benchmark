@@ -1,0 +1,4 @@
+Method: ICNNs
+Function: grammy_and_lee
+Max Timestep: 100
+Running Time: 27188.80471691303
