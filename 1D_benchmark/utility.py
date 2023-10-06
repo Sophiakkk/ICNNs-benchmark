@@ -39,7 +39,7 @@ class one_dim_ICNNsTrainer(object):
                  num_steps: int = 10000,
                  num_grids: int = 10000,
                  lr: float = 0.001,
-                 device: torch.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+                 device: torch.device = torch.device('cpu')
                  ):
         self.tmax = tmax        # the maximum value of t
         self.lr = lr
