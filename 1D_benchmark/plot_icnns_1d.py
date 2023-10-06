@@ -20,7 +20,7 @@ for func in func_list:
         x = np.linspace(x_min,x_max,num_grids).reshape(-1,1)
         features = torch.tensor(x,dtype=torch.float32)
         y = model(features).detach().numpy().squeeze()        
-        plt.plot(x, y, label = "ICNNs at t={}".format(t))
+        plt.plot(x, y, label = "ICNNs of {} at t={}".format(func,t))
 plt.xlim(x_min,x_max)
 plt.legend()
 plt.savefig("./figures/ICNNs_{}_T{}.png".format(func,tmax,t))
