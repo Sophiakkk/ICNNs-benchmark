@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with grammy_and_lee T 100:
+seed 1: error (input) is 1.5021145343780518, error (output) is 16.007057189941406
+seed 2: error (input) is 1.5022010803222656, error (output) is 16.011188507080078
+seed 3: error (input) is 1.502633810043335, error (output) is 16.03183364868164
+seed 4: error (input) is 1.502596378326416, error (output) is 16.030040740966797
+seed 5: error (input) is 1.502166986465454, error (output) is 16.00956153869629
+seed 6: error (input) is 1.5016729831695557, error (output) is 15.985993385314941
+seed 7: error (input) is 1.5020999908447266, error (output) is 16.00635528564453
+seed 8: error (input) is 1.5025920867919922, error (output) is 16.029834747314453
+seed 9: error (input) is 1.5026397705078125, error (output) is 16.032119750976562
+seed 10: error (input) is 1.5021312236785889, error (output) is 16.007854461669922

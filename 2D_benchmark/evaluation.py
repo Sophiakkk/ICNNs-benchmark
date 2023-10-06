@@ -2,8 +2,6 @@ import argparse
 from two_dim_funcs import *
 from Utility import *
 from optimizers import *
-import torch.optim as optim
-import timeit
 
 # Configuation
 parser = argparse.ArgumentParser()

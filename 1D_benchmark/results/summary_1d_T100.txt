@@ -1,0 +1,6 @@
+Senario: ICNNs on function grammy_and_lee
+avg error (input): 1.502
+std error (input): 0.0003035
+avg error (output): 16.02
+std error (output): 0.01448
+-----------------------------------------

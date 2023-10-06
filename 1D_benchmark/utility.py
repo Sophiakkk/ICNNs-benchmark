@@ -120,3 +120,59 @@ class one_dim_ICNNsTrainer(object):
                         
             if t % 10 == 0:
                 torch.save(self.net.state_dict(), "./models/{}_{}_T{}_t{}.pth".format(self.method, self.init_func_name, self.tmax,t))
+
+
+class one_dim_ICNNs_Evaluator(object):
+    def __init__(self,
+                 net: nn.Module,
+                 seed: int,
+                 x_min: float,
+                 x_max: float,
+                 tmax: int,
+                 x_opt: float,
+                 method_name: str = 'ICNNs',
+                 init_func_name: str = 'gramacy_and_lee',
+                 total_iterations: int = 10000,
+                 step_size: float = 0.001,
+                 device: torch.device = torch.device("cpu")
+                 ):
+        self.net = net.eval()
+        self.seed = seed
+        self.init_func_name = init_func_name
+        self.xmin = x_min
+        self.xmax = x_max
+        self.tmax = tmax
+        self.total_iterations = total_iterations
+        self.step_size = step_size
+        self.x_opt = x_opt
+        self.method_name = method_name
+        self.device = device
+
+    def initalizer(self):
+        # Set the random seed
+        np.random.seed(self.seed)
+        self.initial_x = np.random.uniform(self.xmin, self.xmax, size=(1,1))
+
+    def pick_init_func(self):
+        if self.init_func_name == 'grammy_and_lee':
+            self.init_func = grammy_and_lee
+        else:
+            assert False, "Invalid initial function name"
+
+    def get_grad(self, x):
+        input = x.clone().requires_grad_(True)
+        u = self.net(input)
+        grad_x = torch.autograd.grad(u, input)[0][0][:2].clone().detach()
+        return grad_x
+
+    def evaluate(self):
+        x = torch.tensor(self.initial_x, requires_grad=False, dtype=torch.float32)
+        # perform gradient descent
+        for i in range(self.total_iterations):
+            grad_x = self.get_grad(x)
+            # grad_x = grad_x/np.linalg.norm(grad_x)
+            x = x - self.step_size*grad_x
+        errorx = np.linalg.norm(x-self.x_opt)
+        errory = np.linalg.norm(self.init_func(x)- self.init_func(self.x_opt))
+        with open("./results/{}_{}_T{}_eval.txt".format(self.method_name,self.init_func_name,self.tmax), "a") as f:
+            f.write("seed {}: error (input) is {}, error (output) is {}\n".format(self.seed, errorx, errory))
