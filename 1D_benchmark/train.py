@@ -6,7 +6,7 @@ from utility import *
 parser = argparse.ArgumentParser()
 parser.add_argument("-m","--method_name", type = str, default = "ICNNs")
 parser.add_argument("-f","--func_name", type = str, default = "grammy_and_lee")
-parser.add_argument("-T", "--max_timestep", type = int, default = 100)
+parser.add_argument("-T", "--max_timestep", type = int, default = 50)
 args = parser.parse_args()
 
 # Parameters
