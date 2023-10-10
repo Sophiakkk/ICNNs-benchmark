@@ -117,22 +117,25 @@ class ICNNsTrainer(object):
             ut = torch.minimum(self.u0, u).detach()
             
             # Do GD
-            x_opt = torch.tensor(np.random.uniform(self.xmin, self.xmax, size=(1,2)), requires_grad=True, dtype=torch.float32).to(self.device)
+            x_opt = torch.tensor(np.random.uniform(self.xmin, self.xmax, size=(1,2)), requires_grad=False, dtype=torch.float32).to(self.device)
             print("x_initial is: ",x_opt)
             
             for j in range(self.num_steps):
+                x_new = x_opt.clone().requires_grad_(True).to(self.device)
+
                 # Calculate the value of the function and its gradient
-                y = self.net(x_opt)
-                grad = torch.autograd.grad(y, x_opt, create_graph=True)[0]
+                y = self.net(x_new)
+                grad = torch.autograd.grad(y, x_new, create_graph=True)[0]
 
                 # Perform gradient descent update
                 with torch.no_grad():
-                    x_opt = (x_opt - self.lr * grad).clone().detach().requires_grad_(True)
+                    x_opt = x_new - self.lr * grad
 
             print("optima is: ",x_opt)
             final_opt = x_opt.clone().detach().cpu().numpy()
-            u_x = torch.tensor(self.init_func(final_opt[:,0],final_opt[:,1]),dtype=torch.float32,requires_grad=False).to(self.device)
-            f_x = self.net(x_opt).data
+            u_x = torch.tensor(self.init_func(final_opt),dtype=torch.float32,requires_grad=False).to(self.device)
+            f_x = self.net(x_opt).clone().detach().data
+            x_train = x_opt.clone().requires_grad_(True).to(self.device)
 
             if f_x < u_x:
                 print("fx is: ",f_x)
@@ -140,7 +143,7 @@ class ICNNsTrainer(object):
                 for k in range (self.num_epochs):
                     self.optimizer.zero_grad()
 
-                    y_train = self.net(x_opt)
+                    y_train = self.net(x_train)
                     loss = torch.norm(y_train - u_x) # force the neural net learn the function
                     
                     # Backpropagation
