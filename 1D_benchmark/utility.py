@@ -63,7 +63,7 @@ class one_dim_ICNNsTrainer(object):
     def preprocess(self):
         x = np.linspace(self.xmin, self.xmax, self.num_grids)
         self.features = torch.tensor(x, requires_grad=True, dtype=torch.float32).unsqueeze(1).to(self.device)
-        self.u0 = torch.tensor(self.init_func(x), requires_grad=False, dtype=torch.float32).to(self.device) # generate the initial function values
+        self.u0 = torch.tensor(self.init_func(x), requires_grad=False, dtype=torch.float32).unsqueeze(1).to(self.device) # generate the initial function values
 
     def train(self):
         for t in range(self.tmax+1):
@@ -71,15 +71,15 @@ class one_dim_ICNNsTrainer(object):
                 self.optimizer.zero_grad()
                 u = self.net(self.features)
                 if t == 0:
-                    loss = torch.mean(torch.square(u.squeeze()-self.u0), dim=0)
+                    loss = torch.mean(torch.square(u-self.u0), dim=0)
                 else:
-                    loss = torch.mean(torch.square(u.squeeze()-ut), dim=0)
+                    loss = torch.mean(torch.square(u-ut), dim=0)
                 loss.backward()
                 self.optimizer.step()
                 if epoch % 1000 == 0:
                     print(f"Epoch {epoch}/{self.num_epochs}, Loss: {loss.item()}")
             
-            ut = torch.minimum(self.u0, u.squeeze()).detach()
+            ut = torch.minimum(self.u0, u).detach()
             
             # Do GD
             x_opt = torch.tensor(np.random.uniform(self.xmin, self.xmax), requires_grad=False, dtype=torch.float32).expand(1,1).to(self.device)
