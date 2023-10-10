@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from one_dim_funcs import gramacy_and_lee, dyhotomy
+from one_dim_funcs import grammy_and_lee, dyhotomy
 import numdifftools as nd
 from torch.nn.parameter import Parameter
 import init
@@ -33,7 +33,7 @@ class FICNNs(nn.Module):
 x_min = -1
 x_max = 3
 t_max = 60
-x = np.linspace(x_min, x_max, 1000)
+x = np.linspace(x_min, x_max, 10000)
 num_points = 10000
 
 # Initialize the neural network model and optimizer
@@ -46,7 +46,7 @@ num_epochs = 10000
 beta = 0.001
 num_steps = 10000
 
-u_initial = gramacy_and_lee(x.detach().numpy())
+u_initial = grammy_and_lee(x.detach().numpy())
 u_initial = torch.tensor(u_initial,requires_grad=False)
 
 for i in range(t_max+1):
@@ -89,7 +89,7 @@ for i in range(t_max+1):
         with torch.no_grad():
             x_opt = x_new - beta * grad
     print("optima is: ",x_opt)
-    u_x = gramacy_and_lee(x_opt)
+    u_x = grammy_and_lee(x_opt)
     f_x = model(x_opt.clone()).data
 
     x_train = x_opt.clone().requires_grad_(True)
