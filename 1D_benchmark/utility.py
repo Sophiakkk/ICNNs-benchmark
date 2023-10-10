@@ -61,7 +61,7 @@ class one_dim_ICNNsTrainer(object):
             assert False, "Invalid initial function name"
 
     def preprocess(self):
-        x = np.linspace(self.xmin, self.xmax, self.num_grids).reshape(-1,1)
+        x = np.linspace(self.xmin, self.xmax, self.num_grids)
         self.features = torch.tensor(x, requires_grad=True, dtype=torch.float32).unsqueeze(1).to(self.device)
         self.u0 = torch.tensor(self.init_func(x), requires_grad=False, dtype=torch.float32).to(self.device) # generate the initial function values
 
@@ -71,15 +71,15 @@ class one_dim_ICNNsTrainer(object):
                 self.optimizer.zero_grad()
                 u = self.net(self.features)
                 if t == 0:
-                    loss = torch.mean(torch.square(u.squeeze()-self.u0))
+                    loss = torch.mean(torch.square(u.squeeze()-self.u0), dim=0)
                 else:
-                    loss = torch.mean(torch.square(u.squeeze()-ut.squeeze()))
+                    loss = torch.mean(torch.square(u.squeeze()-ut), dim=0)
                 loss.backward()
                 self.optimizer.step()
                 if epoch % 1000 == 0:
                     print(f"Epoch {epoch}/{self.num_epochs}, Loss: {loss.item()}")
             
-            ut = torch.minimum(self.u0, u).detach()
+            ut = torch.minimum(self.u0, u.squeeze()).detach()
             
             # Do GD
             x_opt = torch.tensor(np.random.uniform(self.xmin, self.xmax), requires_grad=False, dtype=torch.float32).expand(1,1).to(self.device)
