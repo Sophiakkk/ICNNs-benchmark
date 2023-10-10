@@ -106,13 +106,13 @@ class ICNNsTrainer(object):
                 self.optimizer.zero_grad()
                 u = self.net(self.features)
                 if t == 0:
-                    loss = torch.mean(torch.square(u.squeeze()-self.u0.squeeze()))
+                    loss = torch.mean(torch.square(u-self.u0),dim=0)
                 else:
-                    loss = torch.mean(torch.square(u.squeeze()-ut.squeeze()))
+                    loss = torch.mean(torch.square(u-ut),dim=0)
                 loss.backward()
                 self.optimizer.step()
-                # if epoch % 1000 == 0:
-                print(f"Epoch {epoch}/{self.num_epochs}, Loss: {loss.item()}")
+                if epoch % 1000 == 0:
+                    print(f"Epoch {epoch}/{self.num_epochs}, Loss: {loss.item()}")
             
             ut = torch.minimum(self.u0, u).detach()
             
