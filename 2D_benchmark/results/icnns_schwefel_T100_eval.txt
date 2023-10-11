@@ -1,11 +1,11 @@
 Evaluation results for icnns with schwefel T 100:
-seed 1: error (input) is 536.9996255505777, error (output) is 735.1746215820312
-seed 2: error (input) is 980.8649458760942, error (output) is 1311.07373046875
-seed 3: error (input) is 421.05277264384796, error (output) is 599.8509521484375
-seed 4: error (input) is 337.58343530671914, error (output) is 602.9093017578125
-seed 5: error (input) is 696.75154706518, error (output) is 435.20538330078125
-seed 6: error (input) is 545.2350216203718, error (output) is 420.1233825683594
-seed 7: error (input) is 851.8531414996265, error (output) is 1521.3975830078125
-seed 8: error (input) is 68.85574049053041, error (output) is 531.7939453125
-seed 9: error (input) is 987.6359725991017, error (output) is 820.5025024414062
-seed 10: error (input) is 869.0945011543173, error (output) is 1392.4310302734375
+seed 1: error (input) is 531.6823836269979, error (output) is 710.0694580078125
+seed 2: error (input) is 1011.8184824463705, error (output) is 1060.93896484375
+seed 3: error (input) is 418.1318701274183, error (output) is 573.41259765625
+seed 4: error (input) is 375.80875585678746, error (output) is 652.9006958007812
+seed 5: error (input) is 687.0222242939823, error (output) is 624.749755859375
+seed 6: error (input) is 583.7685986258001, error (output) is 527.852294921875
+seed 7: error (input) is 843.4162573273119, error (output) is 1438.082275390625
+seed 8: error (input) is 55.253379189133234, error (output) is 357.2936096191406
+seed 9: error (input) is 992.4150879873359, error (output) is 931.7518920898438
+seed 10: error (input) is 906.5009786374974, error (output) is 1148.466064453125

@@ -1,11 +1,11 @@
 Evaluation results for icnns with dropwave T 100:
-seed 1: error (input) is 1.2136601933468, error (output) is 0.7858273983001709
-seed 2: error (input) is 5.091851361229257, error (output) is 0.9437413215637207
-seed 3: error (input) is 1.691568689634405, error (output) is 0.67317795753479
-seed 4: error (input) is 5.500840186700068, error (output) is 0.9999608397483826
-seed 5: error (input) is 0.5206937212624495, error (output) is 0.06376242637634277
-seed 6: error (input) is 5.7136633151310425, error (output) is 0.8989267349243164
-seed 7: error (input) is 0.6109869390262743, error (output) is 0.31459861993789673
-seed 8: error (input) is 5.076114415014099, error (output) is 0.9557042717933655
-seed 9: error (input) is 2.054491226118389, error (output) is 0.5408000946044922
-seed 10: error (input) is 6.677557390333666, error (output) is 0.9580127000808716
+seed 1: error (input) is 1.115569328684934, error (output) is 0.3586099147796631
+seed 2: error (input) is 2.8742122693195147, error (output) is 0.999634325504303
+seed 3: error (input) is 1.1150822618280885, error (output) is 0.3568505644798279
+seed 4: error (input) is 3.5640359143909586, error (output) is 0.8384178280830383
+seed 5: error (input) is 3.52610929585023, error (output) is 0.8902280926704407
+seed 6: error (input) is 3.0265943670499253, error (output) is 0.8192040324211121
+seed 7: error (input) is 3.9286270536397194, error (output) is 0.9999801516532898
+seed 8: error (input) is 5.309143064827681, error (output) is 0.8981702923774719
+seed 9: error (input) is 3.0527251961886974, error (output) is 0.7772717475891113
+seed 10: error (input) is 4.219900498143449, error (output) is 0.8228945136070251

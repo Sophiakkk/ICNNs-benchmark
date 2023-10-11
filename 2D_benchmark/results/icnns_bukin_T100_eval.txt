@@ -1,11 +1,11 @@
 Evaluation results for icnns with bukin T 100:
-seed 1: error (input) is 0.7498140570655163, error (output) is 20.117277145385742
-seed 2: error (input) is 0.7516285211034668, error (output) is 24.56545066833496
-seed 3: error (input) is 0.7469822018254146, error (output) is 15.770339965820312
-seed 4: error (input) is 0.7496069989701261, error (output) is 14.35865592956543
-seed 5: error (input) is 0.7537983224759188, error (output) is 13.157191276550293
-seed 6: error (input) is 0.7498688085605817, error (output) is 15.239441871643066
-seed 7: error (input) is 0.7513506313956128, error (output) is 21.237213134765625
-seed 8: error (input) is 0.7511481018175892, error (output) is 20.481182098388672
-seed 9: error (input) is 0.7501034971310262, error (output) is 12.247233390808105
-seed 10: error (input) is 0.7510440086393076, error (output) is 24.53817367553711
+seed 1: error (input) is 2.0656696087755475, error (output) is 20.09581756591797
+seed 2: error (input) is 2.115949117951975, error (output) is 10.692277908325195
+seed 3: error (input) is 2.17348124552097, error (output) is 13.249258995056152
+seed 4: error (input) is 3.863659492607851, error (output) is 21.082231521606445
+seed 5: error (input) is 1.9022939048713665, error (output) is 11.551825523376465
+seed 6: error (input) is 3.862993253862649, error (output) is 13.302099227905273
+seed 7: error (input) is 1.7996292737145596, error (output) is 15.650591850280762
+seed 8: error (input) is 3.861528277501316, error (output) is 21.453950881958008
+seed 9: error (input) is 1.7812560525640522, error (output) is 6.8442206382751465
+seed 10: error (input) is 3.861972750825431, error (output) is 9.770013809204102
