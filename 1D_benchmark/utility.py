@@ -10,14 +10,14 @@ from one_dim_funcs import grammy_and_lee
 class FICNNs(nn.Module):
     def __init__(self):
         super(FICNNs, self).__init__()
-        self.fc0_y = nn.Linear(1, 32)
-        self.fc1_y = nn.Linear(1, 32)
+        self.fc0_y = nn.Linear(1, 64)
+        self.fc1_y = nn.Linear(1, 64)
         self.fc2_y = nn.Linear(1, 1)
 
         # Set weights and bias for z
-        self.z1_W = Parameter(torch.empty((32, 32))).requires_grad_(True)
+        self.z1_W = Parameter(torch.empty((64, 64))).requires_grad_(True)
         init.kaiming_uniform_(self.z1_W, a=math.sqrt(5))
-        self.z2_W = Parameter(torch.empty((1, 32))).requires_grad_(True)
+        self.z2_W = Parameter(torch.empty((1, 64))).requires_grad_(True)
         init.kaiming_uniform_(self.z2_W, a=math.sqrt(5))
     
     def forward(self,y):
