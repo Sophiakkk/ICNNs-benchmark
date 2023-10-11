@@ -1,11 +1,11 @@
 Evaluation results for icnns with shubert T 50:
-seed 1: error (input) is 0.8731066713702853, error (output) is 246.18128967285156
-seed 2: error (input) is 7.057930861139969, error (output) is 183.27857971191406
-seed 3: error (input) is 2.050314957847304, error (output) is 178.56251525878906
-seed 4: error (input) is 4.3528199532760325, error (output) is 187.1239013671875
-seed 5: error (input) is 2.823021285359634, error (output) is 183.39938354492188
-seed 6: error (input) is 4.117156319308893, error (output) is 181.86953735351562
-seed 7: error (input) is 5.177662550742925, error (output) is 176.082763671875
-seed 8: error (input) is 5.053796873650305, error (output) is 176.177734375
-seed 9: error (input) is 7.776039739043772, error (output) is 206.74732971191406
-seed 10: error (input) is 7.124194415869101, error (output) is 171.79354858398438
+seed 1: error (input) is 6.293246181113082, error (output) is 3.8675079345703125
+seed 2: error (input) is 3.144488536554855, error (output) is 189.15570068359375
+seed 3: error (input) is 6.295801807049752, error (output) is 3.5214996337890625
+seed 4: error (input) is 4.888087663107562, error (output) is 190.27171325683594
+seed 5: error (input) is 6.296104855494469, error (output) is 3.630340576171875
+seed 6: error (input) is 3.12191331572012, error (output) is 185.3949432373047
+seed 7: error (input) is 6.286818049063078, error (output) is 2.9183502197265625
+seed 8: error (input) is 6.291995955388288, error (output) is 3.4793243408203125
+seed 9: error (input) is 6.294001918540906, error (output) is 3.3365478515625
+seed 10: error (input) is 4.370788768260958, error (output) is 170.89785766601562

@@ -1,55 +1,40 @@
 import torch
 import matplotlib.pyplot as plt
 from Utility import *
+from two_dim_funcs import *
+from optimizers import *
 
-model = test_NeuralNet()
-x_range = np.array([[-32.768,32.768],[-32.768,32.768]])
-x_opt = np.array([0,0])
-optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+tmax = 50
+func_list = ["ackley","bukin","dropwave","eggholder","griewank",
+            "levy","levy13","rastrigin","schaffer2","schwefel","shubert",
+           "tray","holdertable","schaffer4"]
 
-for name, param in model.named_parameters():
-    # print(name, param.shape)
-    if 'bias' not in name:
-        param = param.data.clamp_(0,torch.inf)
+model = FICNNs()
+for func in func_list:
+    for j in range(tmax // 10 + 1):
+        t = (j) * 10
+        model.load_state_dict(torch.load("./models/ICNNs_{}_T{}_t{}.pth".format(func, tmax, t),
+                                        map_location=torch.device('cpu')))
+        model.eval()
+        x_range = np.array(domain_range[func])
+        x_opt = np.array(opt_solutions[func][0]) 
 
-for name, param in model.named_parameters():
-    # print(name, param.shape)
-    if 'bias' not in name:
-        if 'z' not in name:
-            if '2' not in name:
-                print(name)
+        x1 = np.linspace(x_range[0][0],x_range[0][1],100)
+        x2 = np.linspace(x_range[1][0],x_range[1][1],100)
+        X1, X2 = np.meshgrid(x1, x2)
+        features = torch.tensor(np.c_[X1.ravel(), X2.ravel()],dtype=torch.float32)
+        print(features.shape)
+        z = model(features).detach().numpy().squeeze()
+        print(z.shape)
+        print(z.sum())
 
-# class WeightClipper(object):
-
-#     def __init__(self, frequency=5):
-#         self.frequency = frequency
-
-#     def __call__(self, module):
-#         # filter the variables to get the ones you want
-#         if hasattr(module, 'weight'):
-#             w = module.weight.data
-#             w = w.clamp(0,1)
-
-# x = torch.linspace(x_range[0][0],x_range[0][1],100)
-# y = torch.linspace(x_range[1][0],x_range[1][1],100)
-# X, Y = torch.meshgrid(x, y)
-# xline = X.reshape(-1)
-# yline = Y.reshape(-1)
-# fxy = ackley(xline,yline)
-
-# t0 = torch.tensor(0).float()
-# input = torch.cat((xline.unsqueeze(1),yline.unsqueeze(1)),dim=1).requires_grad_(True)
-# print(input.shape)
-
-# for i in range(10000):
-#     optimizer.zero_grad()
-#     z = model(input)
-#     loss = torch.nn.MSELoss()(z,torch.tensor(fxy))
-#     loss.backward()
-#     optimizer.step()
-#     print(loss.item())
-
-# fig = plt.figure()
-# ax = plt.axes(projection='3d')
-# ax.plot_surface(xline.reshape(100,100),yline.reshape(100,100),z.detach().numpy().reshape(100,100))
-# plt.show()
+        fig = plt.figure()
+        ax = plt.axes(projection='3d')
+        # ax.plot_surface(xline.detach().numpy(),yline.detach().numpy(),z)
+        ax.plot_surface(X1,X2,z.reshape(100,100),rstride=1, cstride=1,
+                        cmap='viridis', edgecolor='none')
+        ax.set_xlim(x_range[0][0],x_range[0][1])
+        ax.set_ylim(x_range[1][0],x_range[1][1])
+        ax.set_title("ICNNs on function {} at t = {}".format(func,t))
+        # ax.set_zlim(0, 25)
+        plt.savefig("./figures/ICNNs_{}_T{}_t{}.png".format(func,tmax,t))

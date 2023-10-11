@@ -1,11 +1,11 @@
 Evaluation results for ICNNs with grammy_and_lee T 100:
-seed 1: error (input) is 1.5021145343780518, error (output) is 16.007057189941406
-seed 2: error (input) is 1.5022010803222656, error (output) is 16.011188507080078
-seed 3: error (input) is 1.502633810043335, error (output) is 16.03183364868164
-seed 4: error (input) is 1.502596378326416, error (output) is 16.030040740966797
-seed 5: error (input) is 1.502166986465454, error (output) is 16.00956153869629
-seed 6: error (input) is 1.5016729831695557, error (output) is 15.985993385314941
-seed 7: error (input) is 1.5020999908447266, error (output) is 16.00635528564453
-seed 8: error (input) is 1.5025920867919922, error (output) is 16.029834747314453
-seed 9: error (input) is 1.5026397705078125, error (output) is 16.032119750976562
-seed 10: error (input) is 1.5021312236785889, error (output) is 16.007854461669922
+seed 1: error (input) is 0.36083459854125977, error (output) is 2.8620975017547607
+seed 2: error (input) is 0.3621370792388916, error (output) is 2.8474063873291016
+seed 3: error (input) is 0.36291271448135376, error (output) is 2.8358302116394043
+seed 4: error (input) is 0.36058884859085083, error (output) is 2.8642075061798096
+seed 5: error (input) is 0.35873809456825256, error (output) is 2.8734500408172607
+seed 6: error (input) is 0.36365652084350586, error (output) is 2.8227241039276123
+seed 7: error (input) is 0.35969826579093933, error (output) is 2.8701133728027344
+seed 8: error (input) is 0.3622574806213379, error (output) is 2.8457491397857666
+seed 9: error (input) is 0.36270856857299805, error (output) is 2.839082956314087
+seed 10: error (input) is 0.35935157537460327, error (output) is 2.8716790676116943

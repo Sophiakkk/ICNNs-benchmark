@@ -9,6 +9,8 @@ func_list = ["ackley","bukin","tray","dropwave","eggholder","griewank","holderta
 # "langermann",
 seed_list = [1,2,3,4,5,6,7,8,9,10]
 
+with open('summary_2d_T{}.txt'.format(tmax), 'w') as file:
+    file.writelines('Summary for 2D benchmark with T = {}:\n'.format(tmax))
 for method in method_list:
     for func in func_list:
         metric_list_x = []

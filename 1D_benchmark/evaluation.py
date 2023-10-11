@@ -7,7 +7,7 @@ from utility import *
 parser = argparse.ArgumentParser()
 parser.add_argument("-n","--num_iter", type = int, default = 10000)
 parser.add_argument("-beta", "--step_size", type = float, default = 0.001)
-parser.add_argument("-T", "--max_timestep", type = int, default = 100)
+parser.add_argument("-T", "--max_timestep", type = int, default = 50)
 args = parser.parse_args()
 
 # Parameters

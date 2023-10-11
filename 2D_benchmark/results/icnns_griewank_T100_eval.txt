@@ -1,11 +1,11 @@
 Evaluation results for icnns with griewank T 100:
-seed 1: error (input) is 281.24160898360776, error (output) is 20.944835662841797
-seed 2: error (input) is 572.1132614626897, error (output) is 82.47135925292969
-seed 3: error (input) is 255.99805720710543, error (output) is 17.954381942749023
-seed 4: error (input) is 560.8348309490893, error (output) is 79.83143615722656
-seed 5: error (input) is 553.8706541698635, error (output) is 77.1733627319336
-seed 6: error (input) is 510.19370445353076, error (output) is 65.57882690429688
-seed 7: error (input) is 606.9146389864907, error (output) is 92.63871002197266
-seed 8: error (input) is 716.7864414664003, error (output) is 128.80625915527344
-seed 9: error (input) is 585.7240823762912, error (output) is 86.76465606689453
-seed 10: error (input) is 658.5201336633587, error (output) is 108.52686309814453
+seed 1: error (input) is 280.95606476455464, error (output) is 20.93372917175293
+seed 2: error (input) is 571.5896780206244, error (output) is 82.6852035522461
+seed 3: error (input) is 255.8860321072684, error (output) is 17.803340911865234
+seed 4: error (input) is 560.8195137962099, error (output) is 79.79437255859375
+seed 5: error (input) is 553.6875666510903, error (output) is 77.25851440429688
+seed 6: error (input) is 510.35424518594465, error (output) is 65.7868423461914
+seed 7: error (input) is 607.1692427770529, error (output) is 92.80970001220703
+seed 8: error (input) is 716.5962133514583, error (output) is 128.57432556152344
+seed 9: error (input) is 585.7222377108903, error (output) is 86.69205474853516
+seed 10: error (input) is 657.988868171075, error (output) is 108.39781188964844

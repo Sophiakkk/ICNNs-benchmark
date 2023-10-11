@@ -1,11 +1,11 @@
 Evaluation results for icnns with holdertable T 50:
-seed 1: error (input) is 2.082382619512769, error (output) is 1.9617786407470703
-seed 2: error (input) is 7.856907094071337, error (output) is 15.461322784423828
-seed 3: error (input) is 2.0925917359530306, error (output) is 1.4845809936523438
-seed 4: error (input) is 2.0924446470977505, error (output) is 1.4884910583496094
-seed 5: error (input) is 0.6239738314439534, error (output) is 4.207880020141602
-seed 6: error (input) is 2.5960849770748293, error (output) is 14.4281005859375
-seed 7: error (input) is 2.949236891868533, error (output) is 11.816251754760742
-seed 8: error (input) is 2.0924948863554906, error (output) is 1.487569808959961
-seed 9: error (input) is 4.004180617199249, error (output) is 13.508540153503418
-seed 10: error (input) is 7.989407465246832, error (output) is 16.278228759765625
+seed 1: error (input) is 17.74547100528532, error (output) is 17.370691299438477
+seed 2: error (input) is 21.06021791384746, error (output) is 9.126335144042969
+seed 3: error (input) is 16.344502853779815, error (output) is 2.0447120666503906
+seed 4: error (input) is 8.090734729790118, error (output) is 19.17817497253418
+seed 5: error (input) is 18.23811707307119, error (output) is 14.116508483886719
+seed 6: error (input) is 10.200789097808183, error (output) is 16.59996795654297
+seed 7: error (input) is 18.231964843162903, error (output) is 3.0320568084716797
+seed 8: error (input) is 10.09128662495935, error (output) is 2.6496410369873047
+seed 9: error (input) is 19.3197168697471, error (output) is 4.841899871826172
+seed 10: error (input) is 15.490473255923666, error (output) is 18.320898056030273
