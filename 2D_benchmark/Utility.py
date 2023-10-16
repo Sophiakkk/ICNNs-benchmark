@@ -3,9 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 from two_dim_funcs import *
-import numdifftools as nd
-from torch.utils.data import DataLoader, TensorDataset
-from torch.autograd import Variable
 from torch.nn.parameter import Parameter
 import init
 import math
@@ -113,7 +110,7 @@ class ICNNsTrainer(object):
                 if epoch % 1000 == 0:
                     print(f"Epoch {epoch}/{self.num_epochs}, Loss: {loss.item()}")
             
-            ut = torch.minimum(self.u0, u).detach()
+            ut = torch.minimum(self.u0, u).clone().detach()
             
             # Do GD
             x_opt = torch.tensor(np.random.uniform(self.xmin, self.xmax, size=(1,2)), requires_grad=False, dtype=torch.float32).to(self.device)
@@ -135,7 +132,7 @@ class ICNNsTrainer(object):
             u_x = torch.tensor(self.init_func(final_opt[:,0],final_opt[:,1]),dtype=torch.float32,requires_grad=False).to(self.device)
             f_x = self.net(x_opt).clone().detach().data
             x_train = torch.cat((self.features,x_opt),dim=0).requires_grad_(True).to(self.device)
-            u_label = torch.cat((ut,u_x.reshape(1,1)),dim=0)
+            u_label = torch.cat((ut,u_x.reshape(1,1)),dim=0).requires_grad_(False).to(self.device)
             # x_train = x_opt.clone().requires_grad_(True).to(self.device)
 
             if f_x < u_x:
