@@ -8,7 +8,7 @@ import timeit
 parser = argparse.ArgumentParser()
 parser.add_argument("-m","--method_name", type = str, default = "ICNNs")
 parser.add_argument("-f","--func_name", type = str, default = "ackley")
-parser.add_argument("-T", "--max_timestep", type = int, default = 50)
+parser.add_argument("-T", "--max_timestep", type = int, default = 100)
 args = parser.parse_args()
 
 # Parameters
