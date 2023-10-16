@@ -4,7 +4,7 @@ from Utility import *
 from two_dim_funcs import *
 from optimizers import *
 
-tmax = 50
+tmax = 100
 func_list = ["ackley","bukin","dropwave","eggholder","griewank",
             "levy","levy13","rastrigin","schaffer2","schwefel","shubert",
            "tray","holdertable","schaffer4"]

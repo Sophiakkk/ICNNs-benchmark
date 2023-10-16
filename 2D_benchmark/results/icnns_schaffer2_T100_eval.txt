@@ -1,11 +1,11 @@
 Evaluation results for icnns with schaffer2 T 100:
-seed 1: error (input) is 46.96389545165766, error (output) is 0.5482109189033508
-seed 2: error (input) is 95.45714360356502, error (output) is 0.4953426420688629
-seed 3: error (input) is 42.68729091604036, error (output) is 0.47201770544052124
-seed 4: error (input) is 93.74416552855612, error (output) is 0.49640369415283203
-seed 5: error (input) is 92.60180850912138, error (output) is 0.4945710003376007
-seed 6: error (input) is 85.27110818116095, error (output) is 0.5072500109672546
-seed 7: error (input) is 101.47696148663698, error (output) is 0.5001508593559265
-seed 8: error (input) is 119.66298572220336, error (output) is 0.4987567961215973
-seed 9: error (input) is 97.85024335731545, error (output) is 0.504318356513977
-seed 10: error (input) is 109.90743865739998, error (output) is 0.49999842047691345
+seed 1: error (input) is 47.211584984092866, error (output) is 0.5321910381317139
+seed 2: error (input) is 95.50344438172368, error (output) is 0.5043762922286987
+seed 3: error (input) is 43.07294268760302, error (output) is 0.46247100830078125
+seed 4: error (input) is 94.0535946315376, error (output) is 0.5025395750999451
+seed 5: error (input) is 92.70876725246943, error (output) is 0.5054019093513489
+seed 6: error (input) is 85.52200982749824, error (output) is 0.5049409866333008
+seed 7: error (input) is 101.5397625796381, error (output) is 0.49613067507743835
+seed 8: error (input) is 120.04428766744864, error (output) is 0.5020635724067688
+seed 9: error (input) is 97.77419520983958, error (output) is 0.49927622079849243
+seed 10: error (input) is 110.08677971329807, error (output) is 0.5028901100158691

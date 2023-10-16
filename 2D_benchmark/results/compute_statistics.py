@@ -2,7 +2,7 @@ import re
 import numpy as np
 import math
 
-tmax = 100
+tmax = 50
 method_list = ['icnns']
 func_list = ["ackley","bukin","tray","dropwave","eggholder","griewank","holdertable",
              "levy","levy13","rastrigin","schaffer2","schaffer4","schwefel", "shubert"]

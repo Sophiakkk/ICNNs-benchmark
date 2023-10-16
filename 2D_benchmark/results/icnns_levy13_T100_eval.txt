@@ -1,11 +1,11 @@
 Evaluation results for icnns with levy13 T 100:
-seed 1: error (input) is 1.5814282051751964, error (output) is 4.78432559967041
-seed 2: error (input) is 1.5809825612664643, error (output) is 4.785346984863281
-seed 3: error (input) is 1.5819437326312435, error (output) is 4.78277063369751
-seed 4: error (input) is 1.581518308212945, error (output) is 4.784063816070557
-seed 5: error (input) is 1.5815749441525042, error (output) is 4.784028053283691
-seed 6: error (input) is 1.5811936285619652, error (output) is 4.7845048904418945
-seed 7: error (input) is 1.580406339080285, error (output) is 4.787726879119873
-seed 8: error (input) is 1.581860652090235, error (output) is 4.783337593078613
-seed 9: error (input) is 1.5815476105333297, error (output) is 4.784004211425781
-seed 10: error (input) is 1.5810368697357036, error (output) is 4.785449981689453
+seed 1: error (input) is 1.295667248420602, error (output) is 2.8393678665161133
+seed 2: error (input) is 1.316228337745452, error (output) is 2.8359150886535645
+seed 3: error (input) is 1.1306987554721901, error (output) is 1.884041666984558
+seed 4: error (input) is 0.9980136448803214, error (output) is 1.8577704429626465
+seed 5: error (input) is 1.287330048457381, error (output) is 2.6609649658203125
+seed 6: error (input) is 1.0683468042163768, error (output) is 2.323885679244995
+seed 7: error (input) is 1.3664982570203958, error (output) is 3.864158868789673
+seed 8: error (input) is 0.7162263362075901, error (output) is 1.1694645881652832
+seed 9: error (input) is 1.3822626370727884, error (output) is 3.6306185722351074
+seed 10: error (input) is 1.220334354040471, error (output) is 3.0289697647094727

@@ -24,15 +24,14 @@ import math
 class FICNNs(nn.Module):
     def __init__(self):
         super(FICNNs, self).__init__()
-        self.fc0_y = nn.Linear(2, 64)
-        self.fc1_y = nn.Linear(2, 64)
-        self.fc2_y = nn.Linear(2, 64)
+        self.fc0_y = nn.Linear(2, 32)
+        self.fc1_y = nn.Linear(2, 32)
         self.fc_last_y = nn.Linear(2, 1)
 
         # Set weights and bias for z
-        self.z1_W = Parameter(torch.empty((64, 64))).requires_grad_(True)
+        self.z1_W = Parameter(torch.empty((32, 32))).requires_grad_(True)
         init.kaiming_uniform_(self.z1_W, a=math.sqrt(5))
-        self.z_last_W = Parameter(torch.empty((1, 64))).requires_grad_(True)
+        self.z_last_W = Parameter(torch.empty((1, 32))).requires_grad_(True)
         init.kaiming_uniform_(self.z_last_W, a=math.sqrt(5))
     
     def forward(self,y):
@@ -135,17 +134,18 @@ class ICNNsTrainer(object):
             final_opt = x_opt.clone().detach().cpu().numpy()
             u_x = torch.tensor(self.init_func(final_opt[:,0],final_opt[:,1]),dtype=torch.float32,requires_grad=False).to(self.device)
             f_x = self.net(x_opt).clone().detach().data
-            x_train = x_opt.clone().requires_grad_(True).to(self.device)
+            x_train = torch.cat((self.features,x_opt),dim=0).requires_grad_(True).to(self.device)
+            u_label = torch.cat((ut,u_x.reshape(1,1)),dim=0)
+            # x_train = x_opt.clone().requires_grad_(True).to(self.device)
 
             if f_x < u_x:
                 print("fx is: ",f_x)
                 print("ux is: ",u_x)
                 for k in range (self.num_epochs):
                     self.optimizer.zero_grad()
-
                     y_train = self.net(x_train)
-                    loss = torch.norm(y_train - u_x) # force the neural net learn the function
-                    
+                    # loss = torch.norm(y_train - u_x) # force the neural net learn the function
+                    loss = torch.mean(torch.square(y_train-u_label),dim=0)
                     # Backpropagation
                     loss.backward()
                     

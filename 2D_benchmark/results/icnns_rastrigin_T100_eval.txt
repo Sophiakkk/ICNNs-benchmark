@@ -1,11 +1,11 @@
 Evaluation results for icnns with rastrigin T 100:
-seed 1: error (input) is 0.08644858028798125, error (output) is 1.4631528854370117
-seed 2: error (input) is 0.08681795666273884, error (output) is 1.4755287170410156
-seed 3: error (input) is 0.0868181374807726, error (output) is 1.4755382537841797
-seed 4: error (input) is 0.08597474935251025, error (output) is 1.4473152160644531
-seed 5: error (input) is 0.08729471087864636, error (output) is 1.4916152954101562
-seed 6: error (input) is 0.08681290212393095, error (output) is 1.475320816040039
-seed 7: error (input) is 0.08583090341128823, error (output) is 1.442519187927246
-seed 8: error (input) is 0.08648263639690894, error (output) is 1.4643735885620117
-seed 9: error (input) is 0.08677446056273622, error (output) is 1.4740667343139648
-seed 10: error (input) is 0.08621555962710123, error (output) is 1.455362319946289
+seed 1: error (input) is 0.030896792250300825, error (output) is 0.1888132095336914
+seed 2: error (input) is 0.03032436817055036, error (output) is 0.1818990707397461
+seed 3: error (input) is 0.030764197744262464, error (output) is 0.1871929168701172
+seed 4: error (input) is 0.030391201833957212, error (output) is 0.18270397186279297
+seed 5: error (input) is 0.03091328896933839, error (output) is 0.18901443481445312
+seed 6: error (input) is 0.031108789262413044, error (output) is 0.19139671325683594
+seed 7: error (input) is 0.030726699046695616, error (output) is 0.18674468994140625
+seed 8: error (input) is 0.031035803228316148, error (output) is 0.19051361083984375
+seed 9: error (input) is 0.030940159912529873, error (output) is 0.18933486938476562
+seed 10: error (input) is 0.030641651808834335, error (output) is 0.1857147216796875

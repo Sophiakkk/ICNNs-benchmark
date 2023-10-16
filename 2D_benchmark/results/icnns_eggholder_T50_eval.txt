@@ -1,11 +1,11 @@
 Evaluation results for icnns with eggholder T 50:
-seed 1: error (input) is 622.0417578846598, error (output) is 1024.3424072265625
-seed 2: error (input) is 1046.5746818804298, error (output) is 1214.821533203125
-seed 3: error (input) is 494.9938642762958, error (output) is 1214.8984375
-seed 4: error (input) is 338.326878337213, error (output) is 924.4290161132812
-seed 5: error (input) is 800.9656238348072, error (output) is 1668.334228515625
-seed 6: error (input) is 568.1519659694925, error (output) is 1104.7362060546875
-seed 7: error (input) is 955.1487076898479, error (output) is 1312.443359375
-seed 8: error (input) is 164.3877623592903, error (output) is 308.2288818359375
-seed 9: error (input) is 1087.1982826232068, error (output) is 436.35052490234375
-seed 10: error (input) is 907.0464673999479, error (output) is 297.28033447265625
+seed 1: error (input) is 622.667588926335, error (output) is 835.50634765625
+seed 2: error (input) is 1059.8518922582302, error (output) is 1119.53857421875
+seed 3: error (input) is 497.51043905275424, error (output) is 1157.333740234375
+seed 4: error (input) is 356.37187934318104, error (output) is 700.5843505859375
+seed 5: error (input) is 796.7259847397378, error (output) is 1640.002685546875
+seed 6: error (input) is 585.5285257535414, error (output) is 1361.798828125
+seed 7: error (input) is 952.7269524286888, error (output) is 1520.91455078125
+seed 8: error (input) is 150.22263931321982, error (output) is 626.8997802734375
+seed 9: error (input) is 1089.6389271983676, error (output) is 410.5084228515625
+seed 10: error (input) is 924.1462773346117, error (output) is 246.66436767578125
