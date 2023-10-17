@@ -1,4 +1,4 @@
 Method: ICNNs
 Function: holdertable
 Max Timestep: 50
-Running Time: 2430.047757946886
+Running Time: 2180.295449270867

@@ -1,4 +1,4 @@
 Method: ICNNs
 Function: bukin
 Max Timestep: 50
-Running Time: 1597.1969097824767
+Running Time: 1598.1922226753086

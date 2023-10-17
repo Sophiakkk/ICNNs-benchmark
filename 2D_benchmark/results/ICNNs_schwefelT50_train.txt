@@ -1,4 +1,4 @@
 Method: ICNNs
 Function: schwefel
 Max Timestep: 50
-Running Time: 2383.676249860786
+Running Time: 2866.0819500451908
