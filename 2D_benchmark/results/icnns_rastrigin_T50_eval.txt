@@ -1,11 +1,11 @@
-Evaluation results for icnns with rastrigin T 50:
-seed 1: error (input) is 0.005620369811352071, error (output) is 0.0062656402587890625
-seed 2: error (input) is 0.005256635421789712, error (output) is 0.005481719970703125
-seed 3: error (input) is 0.0065035557822951265, error (output) is 0.008390426635742188
-seed 4: error (input) is 0.006097642497795312, error (output) is 0.0073757171630859375
-seed 5: error (input) is 0.006239926582332771, error (output) is 0.007723808288574219
-seed 6: error (input) is 0.0050585936514460925, error (output) is 0.0050754547119140625
-seed 7: error (input) is 0.005565171736275163, error (output) is 0.006144523620605469
-seed 8: error (input) is 0.006391794382754756, error (output) is 0.008103370666503906
-seed 9: error (input) is 0.006475150383195425, error (output) is 0.008316993713378906
-seed 10: error (input) is 0.00594816653371519, error (output) is 0.007018089294433594
+Evaluation results for ICNNs with rastrigin T 50:
+seed 1: error (input) is 0.03356926483962512, error (output) is 0.22274398803710938
+seed 2: error (input) is 0.033592564453185154, error (output) is 0.2230510711669922
+seed 3: error (input) is 0.03319879805901843, error (output) is 0.21787261962890625
+seed 4: error (input) is 0.031825910116858855, error (output) is 0.20028400421142578
+seed 5: error (input) is 0.033026664949597766, error (output) is 0.21562671661376953
+seed 6: error (input) is 0.032448787242644016, error (output) is 0.20817279815673828
+seed 7: error (input) is 0.031787660961540724, error (output) is 0.19980430603027344
+seed 8: error (input) is 0.032126903392362106, error (output) is 0.20407867431640625
+seed 9: error (input) is 0.032181399409573104, error (output) is 0.20476913452148438
+seed 10: error (input) is 0.03166992105905456, error (output) is 0.1983318328857422

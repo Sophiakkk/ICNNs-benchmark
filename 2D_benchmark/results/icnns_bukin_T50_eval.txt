@@ -1,11 +1,11 @@
-Evaluation results for icnns with bukin T 50:
-seed 1: error (input) is 0.12692104288168402, error (output) is 8.110363960266113
-seed 2: error (input) is 0.12471698667712884, error (output) is 15.404263496398926
-seed 3: error (input) is 0.12354687847702969, error (output) is 10.535365104675293
-seed 4: error (input) is 0.12121805955062939, error (output) is 8.810822486877441
-seed 5: error (input) is 0.12433631680052407, error (output) is 5.6642231941223145
-seed 6: error (input) is 0.1273672156255337, error (output) is 4.095317840576172
-seed 7: error (input) is 0.12746981747081848, error (output) is 12.37692642211914
-seed 8: error (input) is 0.12219510210275503, error (output) is 9.450053215026855
-seed 9: error (input) is 0.13043065967724835, error (output) is 4.828234672546387
-seed 10: error (input) is 0.12558856075374766, error (output) is 15.238633155822754
+Evaluation results for ICNNs with bukin T 50:
+seed 1: error (input) is 0.22090114412736606, error (output) is 17.6613712310791
+seed 2: error (input) is 0.2241715087418255, error (output) is 19.168663024902344
+seed 3: error (input) is 0.21870198229822982, error (output) is 15.545848846435547
+seed 4: error (input) is 0.22403376611900566, error (output) is 11.133993148803711
+seed 5: error (input) is 0.22264236332044166, error (output) is 16.35565185546875
+seed 6: error (input) is 0.22262177962226257, error (output) is 1.8887126445770264
+seed 7: error (input) is 0.21951030712044944, error (output) is 17.671581268310547
+seed 8: error (input) is 0.22417959190398135, error (output) is 13.247164726257324
+seed 9: error (input) is 0.22318594963871463, error (output) is 6.078699111938477
+seed 10: error (input) is 0.2197737139466355, error (output) is 11.140395164489746

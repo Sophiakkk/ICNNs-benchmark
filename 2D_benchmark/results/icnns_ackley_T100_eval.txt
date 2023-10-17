@@ -1,11 +1,11 @@
-Evaluation results for icnns with ackley T 100:
-seed 1: error (input) is 9.619099407783409, error (output) is 17.218338012695312
-seed 2: error (input) is 26.76197569761292, error (output) is 21.56761360168457
-seed 3: error (input) is 8.640167593988648, error (output) is 15.552698135375977
-seed 4: error (input) is 25.974160604827038, error (output) is 21.363004684448242
-seed 5: error (input) is 25.162653572297177, error (output) is 20.98893165588379
-seed 6: error (input) is 23.825494970602527, error (output) is 20.429086685180664
-seed 7: error (input) is 27.545205608519506, error (output) is 21.557235717773438
-seed 8: error (input) is 35.2012006066832, error (output) is 20.427101135253906
-seed 9: error (input) is 25.859359851948422, error (output) is 21.215492248535156
-seed 10: error (input) is 32.532958704181056, error (output) is 21.319169998168945
+Evaluation results for ICNNs with ackley T 100:
+seed 1: error (input) is 10.653599820858684, error (output) is 17.32427215576172
+seed 2: error (input) is 26.260566859691917, error (output) is 19.571151733398438
+seed 3: error (input) is 9.033192779229042, error (output) is 16.29007911682129
+seed 4: error (input) is 25.59988558002148, error (output) is 21.29388427734375
+seed 5: error (input) is 26.285637732906423, error (output) is 20.002609252929688
+seed 6: error (input) is 23.249139482673336, error (output) is 21.174800872802734
+seed 7: error (input) is 29.016723035135666, error (output) is 21.43108558654785
+seed 8: error (input) is 35.23902542948738, error (output) is 22.025390625
+seed 9: error (input) is 26.957744706675697, error (output) is 20.36927032470703
+seed 10: error (input) is 31.632123922797934, error (output) is 21.865863800048828

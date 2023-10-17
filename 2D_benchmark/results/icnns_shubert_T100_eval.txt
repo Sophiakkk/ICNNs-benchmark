@@ -1,11 +1,11 @@
-Evaluation results for icnns with shubert T 100:
-seed 1: error (input) is 13.336764628889563, error (output) is 186.64996337890625
-seed 2: error (input) is 13.349944459193377, error (output) is 186.83419799804688
-seed 3: error (input) is 13.340105758783618, error (output) is 186.70066833496094
-seed 4: error (input) is 13.329359341078273, error (output) is 186.5956268310547
-seed 5: error (input) is 13.329059721513463, error (output) is 186.6121063232422
-seed 6: error (input) is 13.33679896597909, error (output) is 186.69573974609375
-seed 7: error (input) is 13.343328409329011, error (output) is 186.75302124023438
-seed 8: error (input) is 13.348836631175578, error (output) is 186.8314971923828
-seed 9: error (input) is 13.348938231855527, error (output) is 186.8066864013672
-seed 10: error (input) is 13.349392618561719, error (output) is 186.81822204589844
+Evaluation results for ICNNs with shubert T 100:
+seed 1: error (input) is 3.774925831773832, error (output) is 191.9610595703125
+seed 2: error (input) is 7.65897186356898, error (output) is 207.10321044921875
+seed 3: error (input) is 1.2278658639556717, error (output) is 200.62344360351562
+seed 4: error (input) is 4.392901143092512, error (output) is 187.20339965820312
+seed 5: error (input) is 6.702363701393078, error (output) is 152.89244079589844
+seed 6: error (input) is 7.670589352979402, error (output) is 165.1316680908203
+seed 7: error (input) is 6.692254658952361, error (output) is 151.35287475585938
+seed 8: error (input) is 4.198596747005714, error (output) is 193.84193420410156
+seed 9: error (input) is 7.149853410394638, error (output) is 159.18524169921875
+seed 10: error (input) is 7.709347303358206, error (output) is 215.7616729736328

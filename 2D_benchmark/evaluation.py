@@ -16,12 +16,12 @@ func_list = ["ackley","bukin","dropwave","eggholder","griewank",
             "levy","levy13","rastrigin","schaffer2","schwefel","shubert",
            "tray","holdertable","schaffer4"]
 # "langermann",
-method_list = ["icnns"]
+method_list = ["ICNNs"]
 total_iterations = args.num_iter
 step_size = args.step_size
 
 for method_name in method_list:
-    if method_name == 'icnns':
+    if method_name == 'ICNNs':
         for func_name in func_list:
             x_range = np.array(domain_range[func_name])
             x_opt = np.array(opt_solutions[func_name][0]) # single opt solution

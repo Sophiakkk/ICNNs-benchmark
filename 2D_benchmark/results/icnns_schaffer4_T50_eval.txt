@@ -1,11 +1,11 @@
-Evaluation results for icnns with schaffer4 T 50:
-seed 1: error (input) is 46.46864175464074, error (output) is 0.22891467809677124
-seed 2: error (input) is 95.68540415687858, error (output) is 0.20627519488334656
-seed 3: error (input) is 42.72472355292058, error (output) is 0.18935391306877136
-seed 4: error (input) is 94.64844577291704, error (output) is 0.21135395765304565
-seed 5: error (input) is 91.79236263594885, error (output) is 0.20543888211250305
-seed 6: error (input) is 86.29271488451676, error (output) is 0.21354031562805176
-seed 7: error (input) is 100.45462373722943, error (output) is 0.2077099084854126
-seed 8: error (input) is 120.03034795789439, error (output) is 0.2067527174949646
-seed 9: error (input) is 96.74844060842183, error (output) is 0.2104819416999817
-seed 10: error (input) is 110.75570744143917, error (output) is 0.20621776580810547
+Evaluation results for ICNNs with schaffer4 T 50:
+seed 1: error (input) is 46.6046535483841, error (output) is 0.2518492341041565
+seed 2: error (input) is 95.4327546585687, error (output) is 0.2080591917037964
+seed 3: error (input) is 43.09204554520071, error (output) is 0.22064274549484253
+seed 4: error (input) is 95.05336496125244, error (output) is 0.20916348695755005
+seed 5: error (input) is 91.8250140847255, error (output) is 0.21286582946777344
+seed 6: error (input) is 86.53966074345921, error (output) is 0.21178370714187622
+seed 7: error (input) is 100.45510792682454, error (output) is 0.21057087182998657
+seed 8: error (input) is 120.50756315645296, error (output) is 0.2072952687740326
+seed 9: error (input) is 96.59647569564694, error (output) is 0.20583385229110718
+seed 10: error (input) is 110.66267946063239, error (output) is 0.21020936965942383

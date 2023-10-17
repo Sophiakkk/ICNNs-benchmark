@@ -1,11 +1,11 @@
-Evaluation results for icnns with dropwave T 50:
-seed 1: error (input) is 1.9487138744152048, error (output) is 0.7887649536132812
-seed 2: error (input) is 2.6685174223966865, error (output) is 0.6723722219467163
-seed 3: error (input) is 1.4268002836301747, error (output) is 0.7205026149749756
-seed 4: error (input) is 2.634218980381339, error (output) is 0.6377939581871033
-seed 5: error (input) is 4.067365355895344, error (output) is 0.8916006088256836
-seed 6: error (input) is 1.5171735239252744, error (output) is 0.4287310242652893
-seed 7: error (input) is 4.175983159321931, error (output) is 0.8145222663879395
-seed 8: error (input) is 4.818893209409815, error (output) is 0.9053266048431396
-seed 9: error (input) is 3.18699550165618, error (output) is 0.7379076480865479
-seed 10: error (input) is 2.7720997525004223, error (output) is 0.8758854866027832
+Evaluation results for ICNNs with dropwave T 50:
+seed 1: error (input) is 1.0029504683209693, error (output) is 0.25595206022262573
+seed 2: error (input) is 3.365420809755577, error (output) is 0.9866856932640076
+seed 3: error (input) is 0.7019010861629058, error (output) is 0.7946199774742126
+seed 4: error (input) is 3.2727455582430047, error (output) is 0.8644595146179199
+seed 5: error (input) is 3.50208835930301, error (output) is 0.923379123210907
+seed 6: error (input) is 2.950355697722505, error (output) is 0.9468571543693542
+seed 7: error (input) is 3.908358310296871, error (output) is 0.997417151927948
+seed 8: error (input) is 4.909624115045894, error (output) is 0.9796886444091797
+seed 9: error (input) is 3.4664253454105047, error (output) is 0.9659479856491089
+seed 10: error (input) is 4.283275674547226, error (output) is 0.8726242780685425

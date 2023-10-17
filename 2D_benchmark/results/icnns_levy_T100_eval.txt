@@ -1,11 +1,11 @@
-Evaluation results for icnns with levy T 100:
-seed 1: error (input) is 2.8646522617307175, error (output) is 0.029280036687850952
-seed 2: error (input) is 2.5872965316214263, error (output) is 0.3045291602611542
-seed 3: error (input) is 0.3322397622939121, error (output) is 0.0405038520693779
-seed 4: error (input) is 7.9786059048704905, error (output) is 0.012768812477588654
-seed 5: error (input) is 5.893322415628282, error (output) is 0.11449611186981201
-seed 6: error (input) is 6.478026971356949, error (output) is 4.243039608001709
-seed 7: error (input) is 8.070552446940098, error (output) is 0.017885278910398483
-seed 8: error (input) is 5.866427176881315, error (output) is 2.492805242538452
-seed 9: error (input) is 9.150432272476825, error (output) is 0.41142281889915466
-seed 10: error (input) is 4.0684767545134095, error (output) is 0.38465616106987
+Evaluation results for ICNNs with levy T 100:
+seed 1: error (input) is 0.8605876323480235, error (output) is 0.5062263011932373
+seed 2: error (input) is 0.8865442165579669, error (output) is 1.0953335762023926
+seed 3: error (input) is 2.2156498015918027, error (output) is 2.886446714401245
+seed 4: error (input) is 9.056855749355964, error (output) is 5.753312587738037
+seed 5: error (input) is 4.499807625441247, error (output) is 0.6604921817779541
+seed 6: error (input) is 7.8698894846433705, error (output) is 0.002653279574587941
+seed 7: error (input) is 7.3522740439500165, error (output) is 1.2939318418502808
+seed 8: error (input) is 8.173033422914985, error (output) is 0.2742438018321991
+seed 9: error (input) is 8.75668488090562, error (output) is 0.28374505043029785
+seed 10: error (input) is 6.347816663144772, error (output) is 4.894225597381592
