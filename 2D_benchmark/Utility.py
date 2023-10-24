@@ -104,7 +104,7 @@ class ICNNsTrainer(object):
                 if t == 0:
                     loss = torch.mean(torch.square(u-self.u0),dim=0)
                 else:
-                    loss = torch.mean(torch.maximum(u-self.u0,0),dim=0)
+                    loss = torch.mean(torch.maximum(u-self.u0,torch.tensor(0).to(self.device)),dim=0)
                     # loss = torch.mean(torch.square(u-ut),dim=0)
                 loss.backward()
                 self.optimizer.step()
@@ -137,7 +137,7 @@ class ICNNsTrainer(object):
                     self.optimizer.zero_grad()
                     y_train = self.net(x_train)
                     u_joint = self.net(self.features)
-                    loss = torch.mean(torch.square(y_train-u_x),dim=0) + torch.mean(torch.maximum(u_joint-self.u0,0),dim=0)
+                    loss = torch.mean(torch.square(y_train-u_x),dim=0) + torch.mean(torch.maximum(u_joint-self.u0,torch.tensor(0).to(self.device)),dim=0)
                     # Backpropagation
                     loss.backward()
                     
