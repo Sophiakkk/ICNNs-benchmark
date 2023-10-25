@@ -1,11 +1,6 @@
 Evaluation results for ICNNs with schwefel T 50:
-seed 1: error (input) is 539.9723849462434, error (output) is 711.245849609375
-seed 2: error (input) is 1012.2686922552217, error (output) is 1058.2952880859375
-seed 3: error (input) is 424.4558514838363, error (output) is 597.4053955078125
-seed 4: error (input) is 373.0221609856465, error (output) is 496.7060546875
-seed 5: error (input) is 698.822942676514, error (output) is 456.9881896972656
-seed 6: error (input) is 587.7455468852684, error (output) is 555.2852783203125
-seed 7: error (input) is 850.6371482383986, error (output) is 1504.1329345703125
-seed 8: error (input) is 53.74535823430684, error (output) is 329.947998046875
-seed 9: error (input) is 996.6329270757559, error (output) is 828.716796875
-seed 10: error (input) is 906.8517818685458, error (output) is 1143.3636474609375
+seed 1: error (input) is 541.0863267105675, error (output) is 710.390869140625
+seed 2: error (input) is 993.667995613916, error (output) is 1250.331787109375
+seed 3: error (input) is 425.2765025082783, error (output) is 604.3990478515625
+seed 4: error (input) is 334.2840439646643, error (output) is 486.752197265625
+seed 5: error (input) is 700.2618529076519, error (output) is 437.1358947753906
