@@ -1,11 +1,11 @@
 Evaluation results for ICNNs with schwefel T 100:
-seed 1: error (input) is 540.0433199757699, error (output) is 710.9630126953125
-seed 2: error (input) is 1012.305103884407, error (output) is 1058.3621826171875
-seed 3: error (input) is 424.52205365971633, error (output) is 597.62451171875
-seed 4: error (input) is 372.93136805809723, error (output) is 480.4324645996094
-seed 5: error (input) is 698.822942676514, error (output) is 456.9881896972656
-seed 6: error (input) is 587.7455468852684, error (output) is 555.2852783203125
-seed 7: error (input) is 850.6371482383986, error (output) is 1504.1329345703125
-seed 8: error (input) is 53.670077898243264, error (output) is 328.9072265625
-seed 9: error (input) is 996.6678279028139, error (output) is 828.7669677734375
-seed 10: error (input) is 906.8517818685458, error (output) is 1143.3636474609375
+seed 1: error (input) is 558.0269100332827, error (output) is 624.8449096679688
+seed 2: error (input) is 1014.8510751992146, error (output) is 1034.61669921875
+seed 3: error (input) is 444.5989421325527, error (output) is 657.5054931640625
+seed 4: error (input) is 395.6940154456719, error (output) is 611.0150146484375
+seed 5: error (input) is 711.0121386830413, error (output) is 612.757080078125
+seed 6: error (input) is 607.517178813857, error (output) is 730.9548950195312
+seed 7: error (input) is 868.2983607575987, error (output) is 1344.424072265625
+seed 8: error (input) is 62.432863830980416, error (output) is 420.31475830078125
+seed 9: error (input) is 1000.3213887396308, error (output) is 777.6546630859375
+seed 10: error (input) is 909.4099083651003, error (output) is 1111.860107421875
