@@ -12,10 +12,10 @@ args = parser.parse_args()
 
 # Parameters
 seed_list = [1,2,3,4,5,6,7,8,9,10]
-func_list = ["ackley","bukin","dropwave","eggholder","griewank",
+func_list = ["ackley","bukin","dropwave","eggholder","griewank","langermann",
             "levy","levy13","rastrigin","schaffer2","schwefel","shubert",
            "tray","holdertable","schaffer4"]
-# "langermann",
+
 method_list = ["ICNNs"]
 total_iterations = args.num_iter
 step_size = args.step_size
