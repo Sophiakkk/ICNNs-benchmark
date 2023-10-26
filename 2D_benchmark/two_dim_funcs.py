@@ -54,6 +54,7 @@ def langermann(x,y):
     input = np.hstack((x,y)).reshape(-1,2)
     for i in range(m):
         result += -c[i]*np.exp(-1/np.pi*np.sum((input - A[i,:])**2, axis = 1))*np.cos(np.pi*np.sum((input - A[i,:])**2, axis = 1))
+    result = result.reshape(-1,1)
     return result
 
 # levy function

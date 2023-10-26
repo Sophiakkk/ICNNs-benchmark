@@ -104,8 +104,8 @@ class ICNNsTrainer(object):
                 if t == 0:
                     loss = torch.mean(torch.square(u-self.u0),dim=0)
                 else:
-                    loss = torch.mean(torch.maximum(u-self.u0,torch.tensor(0).to(self.device)),dim=0)
-                    # loss = torch.mean(torch.square(u-ut),dim=0)
+                    u_local_min = self.net(x_local_min)
+                    loss = torch.mean(torch.maximum(u-self.u0,torch.tensor(0).to(self.device)),dim=0) + torch.maximum(u0_x_local_min-u_local_min,torch.tensor(0).to(self.device))
                 loss.backward()
                 self.optimizer.step()
                 if epoch % 1000 == 0:
@@ -128,25 +128,8 @@ class ICNNsTrainer(object):
 
             print("optima is: ",x_opt)
             final_opt = x_opt.clone().detach().cpu().numpy()
-            u_x = torch.tensor(self.init_func(final_opt[:,0],final_opt[:,1]),dtype=torch.float32,requires_grad=False).to(self.device)
-            f_x = self.net(x_opt).clone().detach().data
-            x_train = x_opt.clone().requires_grad_(True).to(self.device) # only local optimizer
-
-            if f_x < u_x:
-                for k in range (self.num_epochs):
-                    self.optimizer.zero_grad()
-                    y_train = self.net(x_train)
-                    u_joint = self.net(self.features)
-                    loss = torch.mean(torch.square(y_train-u_x),dim=0) + torch.mean(torch.maximum(u_joint-self.u0,torch.tensor(0).to(self.device)),dim=0)
-                    # Backpropagation
-                    loss.backward()
-                    
-                    # Update the model parameters
-                    self.optimizer.step()
-
-                    # Print the loss
-                    if k % 1000 == 0:
-                        print(f'Re-training Epoch [{k}/{self.num_epochs}], Loss: {loss.item():.8f}')
+            u0_x_local_min = torch.tensor(self.init_func(final_opt[:,0],final_opt[:,1]),dtype=torch.float32,requires_grad=False).to(self.device)
+            x_local_min = x_opt.clone().requires_grad_(True).to(self.device) # only local optimizer
                         
             if t % 10 == 0:
                 torch.save(self.net.state_dict(), "./models/{}_{}_T{}_t{}.pth".format(self.method, self.init_func_name, self.tmax,t))
