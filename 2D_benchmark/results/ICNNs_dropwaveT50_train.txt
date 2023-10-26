@@ -1,4 +1,8 @@
 Method: ICNNs
 Function: dropwave
 Max Timestep: 50
+<<<<<<< HEAD
 Running Time: 1923.2233053380623
+=======
+Running Time: 4766.566871993244
+>>>>>>> e408444eef27cb62a704d7609079c4096cd33705
