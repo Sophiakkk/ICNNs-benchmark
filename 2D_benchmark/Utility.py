@@ -132,7 +132,7 @@ class ICNNsTrainer(object):
             x_local_min = x_opt.clone().requires_grad_(True).to(self.device) # only local optimizer
                         
             if t % 10 == 0:
-                torch.save(self.net.state_dict(), "./models/{}_{}_T{}_t{}.pth".format(self.method, self.init_func_name, self.tmax,t))
+                torch.save(self.net.state_dict(), "./models/{}_{}_T{}_t{}_lr{}.pth".format(self.method, self.init_func_name, self.tmax,t,self.lr))
 
 
 # class ICNNsTrainer(object):
