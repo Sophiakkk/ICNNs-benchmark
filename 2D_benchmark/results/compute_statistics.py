@@ -4,7 +4,7 @@ import math
 
 tmax = 50
 method_list = ['ICNNs']
-func_list = ["ackley","bukin","tray","dropwave","eggholder","griewank","holdertable",
+func_list = ["ackley","bukin","tray","dropwave","eggholder","griewank","holdertable","langermann",
              "levy","levy13","rastrigin","schaffer2","schaffer4","schwefel", "shubert"]
 # "langermann",
 seed_list = [1,2,3,4,5,6,7,8,9,10]

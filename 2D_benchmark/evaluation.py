@@ -7,15 +7,15 @@ from optimizers import *
 parser = argparse.ArgumentParser()
 parser.add_argument("-n","--num_iter", type = int, default = 10000)
 parser.add_argument("-beta", "--step_size", type = float, default = 0.001)
-parser.add_argument("-T", "--max_timestep", type = int, default = 100)
+parser.add_argument("-T", "--max_timestep", type = int, default = 50)
 args = parser.parse_args()
 
 # Parameters
 seed_list = [1,2,3,4,5,6,7,8,9,10]
-func_list = ["ackley","bukin","dropwave","eggholder","griewank",
+func_list = ["ackley","bukin","dropwave","eggholder","griewank","langermann",
             "levy","levy13","rastrigin","schaffer2","schwefel","shubert",
            "tray","holdertable","schaffer4"]
-# "langermann",
+
 method_list = ["ICNNs"]
 total_iterations = args.num_iter
 step_size = args.step_size
