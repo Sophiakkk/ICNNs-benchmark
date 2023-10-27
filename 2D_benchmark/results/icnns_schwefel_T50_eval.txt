@@ -1,6 +1,0 @@
-Evaluation results for ICNNs with schwefel T 50:
-seed 1: error (input) is 541.0863267105675, error (output) is 710.390869140625
-seed 2: error (input) is 993.667995613916, error (output) is 1250.331787109375
-seed 3: error (input) is 425.2765025082783, error (output) is 604.3990478515625
-seed 4: error (input) is 334.2840439646643, error (output) is 486.752197265625
-seed 5: error (input) is 700.2618529076519, error (output) is 437.1358947753906

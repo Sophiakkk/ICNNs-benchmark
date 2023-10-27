@@ -1,4 +1,0 @@
-Method: ICNNs
-Function: tray
-Max Timestep: 100
-Running Time: 10257.435346830636
