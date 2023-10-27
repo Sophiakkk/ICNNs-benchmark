@@ -19,7 +19,5 @@ lr=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $4}' $confi
 
 T=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $5}' $config)
 
-echo "This is array task ${SLURM_ARRAY_TASK_ID}, the method name is ${method} and the function is ${func}." >> output.txt
-
 c=$lr+$T
-echo $c
+echo $c >> output.txt
