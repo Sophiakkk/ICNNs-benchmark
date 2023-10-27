@@ -1,16 +1,76 @@
-ArrayTaskID method func
-1 ICNNs ackley
-2 ICNNs bukin
-3 ICNNs dropwave
-4 ICNNs eggholder
-5 ICNNs griewank
-6 ICNNs langermann
-7 ICNNs levy
-8 ICNNs levy13
-9 ICNNs rastrigin
-10 ICNNs schaffer2
-11 ICNNs schwefel
-12 ICNNs shubert
-13 ICNNs tray
-14 ICNNs holdertable
-15 ICNNs schaffer4
+ArrayTaskID method func lr T
+1 ICNNs ackley 0.001 100
+2 ICNNs ackley 0.0001 100
+3 ICNNs ackley 1e-05 100
+4 ICNNs ackley 1e-06 100
+5 ICNNs ackley 1e-07 100
+6 ICNNs bukin 0.001 100
+7 ICNNs bukin 0.0001 100
+8 ICNNs bukin 1e-05 100
+9 ICNNs bukin 1e-06 100
+10 ICNNs bukin 1e-07 100
+11 ICNNs dropwave 0.001 100
+12 ICNNs dropwave 0.0001 100
+13 ICNNs dropwave 1e-05 100
+14 ICNNs dropwave 1e-06 100
+15 ICNNs dropwave 1e-07 100
+16 ICNNs eggholder 0.001 100
+17 ICNNs eggholder 0.0001 100
+18 ICNNs eggholder 1e-05 100
+19 ICNNs eggholder 1e-06 100
+20 ICNNs eggholder 1e-07 100
+21 ICNNs griewank 0.001 100
+22 ICNNs griewank 0.0001 100
+23 ICNNs griewank 1e-05 100
+24 ICNNs griewank 1e-06 100
+25 ICNNs griewank 1e-07 100
+26 ICNNs langermann 0.001 100
+27 ICNNs langermann 0.0001 100
+28 ICNNs langermann 1e-05 100
+29 ICNNs langermann 1e-06 100
+30 ICNNs langermann 1e-07 100
+31 ICNNs levy 0.001 100
+32 ICNNs levy 0.0001 100
+33 ICNNs levy 1e-05 100
+34 ICNNs levy 1e-06 100
+35 ICNNs levy 1e-07 100
+36 ICNNs levy13 0.001 100
+37 ICNNs levy13 0.0001 100
+38 ICNNs levy13 1e-05 100
+39 ICNNs levy13 1e-06 100
+40 ICNNs levy13 1e-07 100
+41 ICNNs rastrigin 0.001 100
+42 ICNNs rastrigin 0.0001 100
+43 ICNNs rastrigin 1e-05 100
+44 ICNNs rastrigin 1e-06 100
+45 ICNNs rastrigin 1e-07 100
+46 ICNNs schaffer2 0.001 100
+47 ICNNs schaffer2 0.0001 100
+48 ICNNs schaffer2 1e-05 100
+49 ICNNs schaffer2 1e-06 100
+50 ICNNs schaffer2 1e-07 100
+51 ICNNs schwefel 0.001 100
+52 ICNNs schwefel 0.0001 100
+53 ICNNs schwefel 1e-05 100
+54 ICNNs schwefel 1e-06 100
+55 ICNNs schwefel 1e-07 100
+56 ICNNs shubert 0.001 100
+57 ICNNs shubert 0.0001 100
+58 ICNNs shubert 1e-05 100
+59 ICNNs shubert 1e-06 100
+60 ICNNs shubert 1e-07 100
+61 ICNNs tray 0.001 100
+62 ICNNs tray 0.0001 100
+63 ICNNs tray 1e-05 100
+64 ICNNs tray 1e-06 100
+65 ICNNs tray 1e-07 100
+66 ICNNs holdertable 0.001 100
+67 ICNNs holdertable 0.0001 100
+68 ICNNs holdertable 1e-05 100
+69 ICNNs holdertable 1e-06 100
+70 ICNNs holdertable 1e-07 100
+71 ICNNs schaffer4 0.001 100
+72 ICNNs schaffer4 0.0001 100
+73 ICNNs schaffer4 1e-05 100
+74 ICNNs schaffer4 1e-06 100
+75 ICNNs schaffer4 1e-07 100

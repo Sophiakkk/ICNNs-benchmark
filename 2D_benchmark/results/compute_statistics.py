@@ -2,12 +2,12 @@ import re
 import numpy as np
 import math
 
-T_list = [50,100]
+T_list = [100]
 method_list = ['ICNNs']
 func_list = ["ackley","bukin","tray","dropwave","eggholder","griewank","holdertable","langermann",
              "levy","levy13","rastrigin","schaffer2","schaffer4","schwefel", "shubert"]
 seed_list = [1,2,3,4,5,6,7,8,9,10]
-lr_list = [1e-6]
+lr_list = [1e-3,1e-4,1e-5,1e-6,1e-7]
 
 for tmax in T_list:
     for lr in lr_list:
