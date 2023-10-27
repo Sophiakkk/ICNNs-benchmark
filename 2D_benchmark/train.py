@@ -28,7 +28,7 @@ if method_name == 'ICNNs':
                                     init_func_name=func_name, 
                                     method = method_name,
                                     tmax=T,
-                                    lr=1e-6)
+                                    lr=learning_rate)
     algorithm.preprocess()
     algorithm.train()
 
