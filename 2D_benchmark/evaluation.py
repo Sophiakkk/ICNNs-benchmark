@@ -16,27 +16,32 @@ func_list = ["ackley","bukin","dropwave","eggholder","griewank","langermann",
             "levy","levy13","rastrigin","schaffer2","schwefel","shubert",
            "tray","holdertable","schaffer4"]
 method_list = ["ICNNs"]
-lr_list = [1e-6]
+lr_list = [1e-3,1e-4,1e-5,1e-6,1e-7]
+T_list = [100]
 total_iterations = args.num_iter
 step_size = args.step_size
 
 for method_name in method_list:
     if method_name == 'ICNNs':
         for lr in lr_list:
-            for func_name in func_list:
-                x_range = np.array(domain_range[func_name])
-                x_opt = np.array(opt_solutions[func_name][0]) # single opt solution
-                with open("./results/{}_{}_T{}_lr{}_eval.txt".format(method_name,func_name,args.max_timestep,lr), "w") as f:
-                    f.write("Evaluation results for {} with {} T {} lr{}:\n".format(method_name,func_name,args.max_timestep,lr))
-                for seed in seed_list:
-                    eval_net = FICNNs()
-                    eval_net.load_state_dict(torch.load("./models/{}_{}_T{}_t{}_lr{}.pth".format(method_name,func_name,args.max_timestep,args.max_timestep),map_location=torch.device('cpu')))
-                    algorithm_evaluator = ICNNs_Evaluator(net=eval_net,
-                                                                x_range=x_range, 
-                                                                tmax=args.max_timestep,
-                                                                init_func_name = func_name, 
-                                                                seed=seed,
-                                                                x_opt = x_opt,
-                                                                method_name = method_name)
-                    algorithm_evaluator.initalizer()
-                    algorithm_evaluator.evaluate()
+            for tmax in T_list:
+                for k in range(tmax//10+1):
+                    t = k*10
+                    for func_name in func_list:
+                        x_range = np.array(domain_range[func_name])
+                        x_opt = np.array(opt_solutions[func_name][0]) # single opt solution
+                        with open("./results/{}_{}_T{}_t{}_lr{}_eval.txt".format(method_name,func_name,tmax,t,lr), "w") as f:
+                            f.write("Evaluation results for {} with {} T {} t{} lr{}:\n".format(method_name,func_name,tmax,t,lr))
+                        for seed in seed_list:
+                            eval_net = FICNNs()
+                            eval_net.load_state_dict(torch.load("./models/{}_{}_T{}_t{}_lr{}.pth".format(method_name,func_name,tmax,t,lr),map_location=torch.device('cpu')))
+                            algorithm_evaluator = ICNNs_Evaluator(net=eval_net,
+                                                                        x_range=x_range, 
+                                                                        tmax=tmax,
+                                                                        t=t,
+                                                                        init_func_name = func_name, 
+                                                                        seed=seed,
+                                                                        x_opt = x_opt,
+                                                                        method_name = method_name)
+                            algorithm_evaluator.initalizer()
+                            algorithm_evaluator.evaluate()
