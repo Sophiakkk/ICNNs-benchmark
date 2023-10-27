@@ -72,6 +72,7 @@ class ICNNsTrainer(object):
                  num_steps: int = 10000,
                  num_grids: int = 100,
                  lr: float = 0.001,
+                 GD_lr: float = 0.001,
                  ):
         self.tmax = tmax        # the maximum value of t
         self.lr = lr
@@ -84,6 +85,7 @@ class ICNNsTrainer(object):
         self.num_steps = num_steps
         self.x_range = x_range
         self.method = method
+        self.GD_lr = GD_lr
     
     def preprocess(self):
         self.xmin = self.x_range[:,0]
@@ -124,7 +126,7 @@ class ICNNsTrainer(object):
 
                 # Perform gradient descent update
                 with torch.no_grad():
-                    x_opt = x_new - self.lr * grad
+                    x_opt = x_new - self.GD_lr * grad
 
             print("optima is: ",x_opt)
             final_opt = x_opt.clone().detach().cpu().numpy()
