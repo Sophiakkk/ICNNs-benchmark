@@ -19,5 +19,5 @@ lr=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $4}' $confi
 
 T=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $5}' $config)
 
-c=$(awk '{print $1*$2}' <<<"$lr+$T")
+c=$(awk '{print $1*$2}' <<<"${lr} ${T}")
 echo $c >> output.txt
