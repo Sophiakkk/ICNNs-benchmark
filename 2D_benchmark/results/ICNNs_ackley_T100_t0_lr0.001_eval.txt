@@ -1,0 +1,1 @@
+Evaluation results for ICNNs with ackley T 100 t0 lr0.001:

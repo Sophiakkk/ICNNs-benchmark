@@ -42,6 +42,7 @@ for method_name in method_list:
                                                                         init_func_name = func_name, 
                                                                         seed=seed,
                                                                         x_opt = x_opt,
-                                                                        method_name = method_name)
+                                                                        method_name = method_name,
+                                                                        lr = lr)
                             algorithm_evaluator.initalizer()
                             algorithm_evaluator.evaluate()
