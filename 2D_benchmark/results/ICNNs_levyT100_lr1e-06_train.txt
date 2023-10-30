@@ -1,0 +1,4 @@
+Method: ICNNs
+Function: levy
+Max Timestep: 100
+Running Time: 9810.276484169066

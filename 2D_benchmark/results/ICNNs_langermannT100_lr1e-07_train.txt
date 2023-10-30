@@ -1,0 +1,4 @@
+Method: ICNNs
+Function: langermann
+Max Timestep: 100
+Running Time: 9810.489222930744

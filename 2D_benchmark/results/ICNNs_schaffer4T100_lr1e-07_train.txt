@@ -1,0 +1,4 @@
+Method: ICNNs
+Function: schaffer4
+Max Timestep: 100
+Running Time: 10240.007841601968

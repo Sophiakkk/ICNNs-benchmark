@@ -1,0 +1,4 @@
+Method: ICNNs
+Function: rastrigin
+Max Timestep: 100
+Running Time: 9777.567939225584
