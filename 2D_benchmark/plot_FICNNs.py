@@ -5,7 +5,7 @@ from two_dim_funcs import *
 from optimizers import *
 
 T_list = [100]
-func_list = ["ackley","bukin","dropwave","eggholder","griewank",
+func_list = ["ackley","bukin","dropwave","eggholder","griewank","langermann",
             "levy","levy13","rastrigin","schaffer2","schwefel","shubert",
            "tray","holdertable","schaffer4"]
 lr_list = [1e-3,1e-4,1e-5,1e-6,1e-7]
