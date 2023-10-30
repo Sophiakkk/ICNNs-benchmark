@@ -238,7 +238,7 @@ class ICNNs_Evaluator(object):
     def __init__(self,
                  net: nn.Module,
                  x_range: np.ndarray,
-                 t, int,
+                 t: int,
                  tmax: int,
                  init_func_name: str,
                  seed: int,
