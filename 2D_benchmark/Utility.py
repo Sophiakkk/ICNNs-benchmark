@@ -280,5 +280,5 @@ class ICNNs_Evaluator(object):
             x = x - self.step_size*grad_x
         errorx = np.linalg.norm(x-self.x_opt)
         errory = np.linalg.norm(self.init_func(x[0][0],x[0][1])- self.init_func(self.x_opt[0],self.x_opt[1]))
-        with open("./results/{}_{}_T{}_t{}_eval.txt".format(self.method_name,self.init_func_name,self.tmax,self.t), "a") as f:
+        with open("./results/{}_{}_T{}_t{}_lr{}_eval.txt".format(self.method_name,self.init_func_name,self.tmax,self.t), "a") as f:
             f.write("seed {}: error (input) is {}, error (output) is {}\n".format(self.seed, errorx, errory))
