@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with tray T 100 t0 lr1e-05:
+seed 1: error (input) is 1.8252600337476819, error (output) is inf
+seed 2: error (input) is 1.8268097842385906, error (output) is inf
+seed 3: error (input) is 1.8277249297688085, error (output) is inf
+seed 4: error (input) is 1.8171440771195282, error (output) is inf
+seed 5: error (input) is 1.830898678984409, error (output) is inf
+seed 6: error (input) is 1.8250870097497012, error (output) is inf
+seed 7: error (input) is 1.8183204610279464, error (output) is inf
+seed 8: error (input) is 1.8139782059054914, error (output) is inf
+seed 9: error (input) is 1.8201560814527487, error (output) is inf
+seed 10: error (input) is 1.8305561134030075, error (output) is inf

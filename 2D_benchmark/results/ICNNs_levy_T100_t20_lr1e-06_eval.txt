@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with levy T 100 t20 lr1e-06:
+seed 1: error (input) is 1.0450015438251903, error (output) is 1.425527811050415
+seed 2: error (input) is 1.035134442227386, error (output) is 1.3925588130950928
+seed 3: error (input) is 1.040781081162519, error (output) is 1.4205111265182495
+seed 4: error (input) is 1.039113270059045, error (output) is 1.4141384363174438
+seed 5: error (input) is 1.0436922471098595, error (output) is 1.4155622720718384
+seed 6: error (input) is 1.0410038730165916, error (output) is 1.4011393785476685
+seed 7: error (input) is 1.0344707518964866, error (output) is 1.3846238851547241
+seed 8: error (input) is 1.0447077661915576, error (output) is 1.4271962642669678
+seed 9: error (input) is 1.042190842734081, error (output) is 1.4200499057769775
+seed 10: error (input) is 1.042490191757206, error (output) is 1.421271562576294

@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with rastrigin T 100 t20 lr0.001:
+seed 1: error (input) is 2.529497616041009, error (output) is 24.50689697265625
+seed 2: error (input) is 3.1820328635754027, error (output) is 33.49754333496094
+seed 3: error (input) is 2.587204826173965, error (output) is 24.24444580078125
+seed 4: error (input) is 2.7641844410154133, error (output) is 38.138267517089844
+seed 5: error (input) is 2.425189966707172, error (output) is 31.200498580932617
+seed 6: error (input) is 3.181962907558156, error (output) is 33.491539001464844
+seed 7: error (input) is 2.3279266831735113, error (output) is 33.55352783203125
+seed 8: error (input) is 2.619620080864719, error (output) is 25.439128875732422
+seed 9: error (input) is 2.440141338072486, error (output) is 30.026485443115234
+seed 10: error (input) is 3.183604389031225, error (output) is 33.4399299621582

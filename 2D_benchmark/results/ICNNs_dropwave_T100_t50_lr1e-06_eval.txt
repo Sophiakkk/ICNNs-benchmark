@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with dropwave T 100 t50 lr1e-06:
+seed 1: error (input) is 0.29524951685297585, error (output) is 0.9611048102378845
+seed 2: error (input) is 0.23531048511814665, error (output) is 0.9752941131591797
+seed 3: error (input) is 0.14742280548441117, error (output) is 0.6006600856781006
+seed 4: error (input) is 0.5286889877438302, error (output) is 0.06618553400039673
+seed 5: error (input) is 0.29505812203044596, error (output) is 0.9615417122840881
+seed 6: error (input) is 0.5283312866231917, error (output) is 0.06598490476608276
+seed 7: error (input) is 0.2953453485638768, error (output) is 0.9608851671218872
+seed 8: error (input) is 0.5191852597485747, error (output) is 0.06379061937332153
+seed 9: error (input) is 0.29549210383252655, error (output) is 0.960547685623169
+seed 10: error (input) is 0.5313313712719789, error (output) is 0.06793451309204102

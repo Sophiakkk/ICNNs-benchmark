@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with bukin T 100 t40 lr1e-05:
+seed 1: error (input) is 4.579995323773565, error (output) is 125.1352310180664
+seed 2: error (input) is 4.5799243286858475, error (output) is 125.05215454101562
+seed 3: error (input) is 4.580244176656034, error (output) is 125.23377990722656
+seed 4: error (input) is 4.579519570818567, error (output) is 125.2262191772461
+seed 5: error (input) is 4.584465270051208, error (output) is 125.46196746826172
+seed 6: error (input) is 4.579017569122232, error (output) is 125.16327667236328
+seed 7: error (input) is 4.581286901114298, error (output) is 125.05147552490234
+seed 8: error (input) is 4.579933679665914, error (output) is 125.17943572998047
+seed 9: error (input) is 4.579347983974009, error (output) is 125.14967346191406
+seed 10: error (input) is 4.580180058320547, error (output) is 125.2040023803711

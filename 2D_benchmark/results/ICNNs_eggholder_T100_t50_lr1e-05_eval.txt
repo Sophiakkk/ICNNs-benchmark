@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with eggholder T 100 t50 lr1e-05:
+seed 1: error (input) is 622.7703609693552, error (output) is 836.7313232421875
+seed 2: error (input) is 1059.6791467623748, error (output) is 1121.005615234375
+seed 3: error (input) is 497.5932187565416, error (output) is 1157.9874267578125
+seed 4: error (input) is 356.28673269161885, error (output) is 704.87548828125
+seed 5: error (input) is 797.0220147129487, error (output) is 1641.3662109375
+seed 6: error (input) is 585.4357393426685, error (output) is 1359.1287841796875
+seed 7: error (input) is 952.9925171135111, error (output) is 1517.64501953125
+seed 8: error (input) is 150.6407020555717, error (output) is 618.1736450195312
+seed 9: error (input) is 1089.8735524104957, error (output) is 409.68524169921875
+seed 10: error (input) is 923.9283368872507, error (output) is 246.53631591796875
