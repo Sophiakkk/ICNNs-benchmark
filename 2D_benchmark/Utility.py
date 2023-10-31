@@ -78,6 +78,7 @@ class ICNNsTrainer(object):
         self.lr = lr
         self.net = net.to(device)
         self.optimizer = torch.optim.Adam(self.net.parameters(), lr=self.lr)
+        self.optimizer_t0 = torch.optim.Adam(self.net.parameters(), lr=1e-3)
         self.device = device
         self.init_func_name = init_func_name
         self.num_grids = num_grids      # the number of grids in each dimension
@@ -101,15 +102,20 @@ class ICNNsTrainer(object):
     def train(self):
         for t in range(self.tmax+1):
             for epoch in range(self.num_epochs):
-                self.optimizer.zero_grad()
-                u = self.net(self.features)
                 if t == 0:
+                    self.optimizer_t0.zero_grad()
+                    u = self.net(self.features)
                     loss = torch.mean(torch.square(u-self.u0),dim=0)
+                    loss.backward()
+                    self.optimizer_t0.step()
                 else:
+                    self.optimizer.zero_grad()
+                    u = self.net(self.features)
                     u_local_min = self.net(x_local_min)
                     loss = torch.mean(torch.maximum(u-self.u0,torch.tensor(0).to(self.device)),dim=0) + torch.maximum(u0_x_local_min-u_local_min,torch.tensor(0).to(self.device))
-                loss.backward()
-                self.optimizer.step()
+                    loss.backward()
+                    self.optimizer.step()
+                
                 if epoch % 1000 == 0:
                     print(f"Epoch {epoch}/{self.num_epochs}, Loss: {loss.item()}")
             
