@@ -6,6 +6,5 @@
 #SBATCH --mem=8GB
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
-#SBATCH --gres=cpu:4
 
 python evaluation.py >> output.txt
