@@ -287,9 +287,11 @@ class ICNNs_Evaluator(object):
             grad_x = self.get_grad(x)
             # grad_x = grad_x/np.linalg.norm(grad_x)
             x = x - self.step_size*grad_x
+        np_x = x.clone().detach().numpy()
         for i in range(self.total_iterations):
-            GD_grad_x = nd.Gradient(self.init_func)(x[0],x[1])
-            x = x - self.step_size*GD_grad_x
+            GD_grad_x = nd.Gradient(self.init_func)(np_x[0],np_x[1])
+            np_x = np_x - self.step_size*GD_grad_x
+        x = torch.tensor(np_x, dtype=torch.float32)
         errorx = np.linalg.norm(x-self.x_opt)
         errory = np.linalg.norm(self.init_func(x[0][0],x[0][1])- self.init_func(self.x_opt[0],self.x_opt[1]))
         with open("./results/{}_{}_T{}_t{}_lr{}_eval.txt".format(self.method_name,self.init_func_name,self.tmax,self.t,self.lr), "a") as f:
