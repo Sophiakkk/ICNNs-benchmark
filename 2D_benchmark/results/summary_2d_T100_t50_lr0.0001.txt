@@ -1,15 +1,15 @@
 Summary for 2D benchmark with T=100, t=50, lr=0.0001:
 Senario: ICNNs on function ackley
-avg error (input): 28.12
-std error (input): 7.421
-avg error (output): 20.61
-std error (output): 0.8705
+avg error (input): 28.25
+std error (input): 7.324
+avg error (output): 20.14
+std error (output): 0.913
 -----------------------------------------
 Senario: ICNNs on function bukin
-avg error (input): 3.963
-std error (input): 2.491
-avg error (output): 47.97
-std error (output): 16.24
+avg error (input): 3.977
+std error (input): 2.356
+avg error (output): 23.16
+std error (output): 10.44
 -----------------------------------------
 Senario: ICNNs on function tray
 avg error (input): N/A
@@ -18,28 +18,28 @@ avg error (output): N/A
 std error (output): N/A
 -----------------------------------------
 Senario: ICNNs on function dropwave
-avg error (input): 4.559
-std error (input): 1.43
-avg error (output): 0.8779
-std error (output): 0.1277
+avg error (input): 4.604
+std error (input): 1.431
+avg error (output): 0.8633
+std error (output): 0.1584
 -----------------------------------------
 Senario: ICNNs on function eggholder
-avg error (input): 704.6
-std error (input): 297.7
-avg error (output): 959.5
-std error (output): 446.3
+avg error (input): 724.5
+std error (input): 314.2
+avg error (output): 838
+std error (output): 363.7
 -----------------------------------------
 Senario: ICNNs on function griewank
-avg error (input): 531
-std error (input): 142.2
-avg error (output): 76.53
-std error (output): 33.29
+avg error (input): 530.8
+std error (input): 141.3
+avg error (output): 76.11
+std error (output): 32.92
 -----------------------------------------
 Senario: ICNNs on function holdertable
-avg error (input): 17.11
-std error (input): 5.877
-avg error (output): 13.35
-std error (output): 6.427
+avg error (input): 16.45
+std error (input): 6.186
+avg error (output): 12.71
+std error (output): 6.927
 -----------------------------------------
 Senario: ICNNs on function langermann
 avg error (input): 8.638
@@ -48,44 +48,44 @@ avg error (output): 1.051
 std error (output): 0.08875
 -----------------------------------------
 Senario: ICNNs on function levy
-avg error (input): 5.881
-std error (input): 2.978
-avg error (output): 1.576
-std error (output): 1.123
+avg error (input): 5.895
+std error (input): 3.077
+avg error (output): 2.074
+std error (output): 1.984
 -----------------------------------------
 Senario: ICNNs on function levy13
-avg error (input): 0.4158
-std error (input): 0.0004708
-avg error (output): 0.6691
-std error (output): 0.005014
+avg error (input): 0.3666
+std error (input): 0.0001977
+avg error (output): 0.2667
+std error (output): 0.0003117
 -----------------------------------------
 Senario: ICNNs on function rastrigin
-avg error (input): 6.398
-std error (input): 0.000174
-avg error (output): 50.84
-std error (output): 0.02605
+avg error (input): 6.635
+std error (input): 0.0003841
+avg error (output): 57.73
+std error (output): 0.03321
 -----------------------------------------
 Senario: ICNNs on function schaffer2
 avg error (input): 88.7
 std error (input): 23.71
-avg error (output): 0.5034
-std error (output): 0.008785
+avg error (output): 0.5001
+std error (output): 0.02529
 -----------------------------------------
 Senario: ICNNs on function schaffer4
 avg error (input): 88.76
 std error (input): 23.77
-avg error (output): 0.2068
-std error (output): 0.005468
+avg error (output): 0.2128
+std error (output): 0.02011
 -----------------------------------------
 Senario: ICNNs on function schwefel
-avg error (input): 642.4
-std error (input): 294.3
-avg error (output): 791.5
-std error (output): 283.4
+avg error (input): 657.4
+std error (input): 306.6
+avg error (output): 546.4
+std error (output): 244.4
 -----------------------------------------
 Senario: ICNNs on function shubert
-avg error (input): 8.71
-std error (input): 2.716
-avg error (output): 202
-std error (output): 24.76
+avg error (input): 8.759
+std error (input): 2.68
+avg error (output): 178.4
+std error (output): 11.35
 -----------------------------------------

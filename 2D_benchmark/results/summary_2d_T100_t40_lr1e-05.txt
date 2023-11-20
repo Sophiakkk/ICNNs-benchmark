@@ -1,15 +1,15 @@
 Summary for 2D benchmark with T=100, t=40, lr=1e-05:
 Senario: ICNNs on function ackley
-avg error (input): 27.15
-std error (input): 8.251
-avg error (output): 20.56
-std error (output): 1.542
+avg error (input): 27.07
+std error (input): 8.225
+avg error (output): 20.06
+std error (output): 1.746
 -----------------------------------------
 Senario: ICNNs on function bukin
-avg error (input): 3.057
-std error (input): 1.641
-avg error (output): 43.63
-std error (output): 13.68
+avg error (input): 3.194
+std error (input): 1.717
+avg error (output): 14.93
+std error (output): 8.236
 -----------------------------------------
 Senario: ICNNs on function tray
 avg error (input): N/A
@@ -18,28 +18,28 @@ avg error (output): N/A
 std error (output): N/A
 -----------------------------------------
 Senario: ICNNs on function dropwave
-avg error (input): 4.018
-std error (input): 1.355
-avg error (output): 0.8407
-std error (output): 0.1667
+avg error (input): 4.002
+std error (input): 1.39
+avg error (output): 0.8435
+std error (output): 0.1714
 -----------------------------------------
 Senario: ICNNs on function eggholder
-avg error (input): 704
-std error (input): 297.7
-avg error (output): 962.4
-std error (output): 447.2
+avg error (input): 724.4
+std error (input): 314.6
+avg error (output): 837.7
+std error (output): 366.4
 -----------------------------------------
 Senario: ICNNs on function griewank
-avg error (input): 531.2
-std error (input): 142.1
-avg error (output): 76.54
-std error (output): 33.3
+avg error (input): 530.7
+std error (input): 141.2
+avg error (output): 76.02
+std error (output): 32.87
 -----------------------------------------
 Senario: ICNNs on function holdertable
-avg error (input): 13.43
-std error (input): 6.07
-avg error (output): 14.22
-std error (output): 4.534
+avg error (input): 13.62
+std error (input): 6.486
+avg error (output): 13.54
+std error (output): 5.47
 -----------------------------------------
 Senario: ICNNs on function langermann
 avg error (input): 7.538
@@ -48,44 +48,44 @@ avg error (output): 1.182
 std error (output): 0.3358
 -----------------------------------------
 Senario: ICNNs on function levy
-avg error (input): 5.873
-std error (input): 3.196
-avg error (output): 2.111
-std error (output): 3.352
+avg error (input): 6.449
+std error (input): 3.167
+avg error (output): 2.903
+std error (output): 1.583
 -----------------------------------------
 Senario: ICNNs on function levy13
-avg error (input): 1.53
-std error (input): 0.49
-avg error (output): 4.633
-std error (output): 2.41
+avg error (input): 1.539
+std error (input): 0.4822
+avg error (output): 3.999
+std error (output): 1.906
 -----------------------------------------
 Senario: ICNNs on function rastrigin
-avg error (input): 3.446
-std error (input): 0.2276
-avg error (output): 32.24
-std error (output): 11.93
+avg error (input): 3.586
+std error (input): 0.2748
+avg error (output): 22.47
+std error (output): 6.33
 -----------------------------------------
 Senario: ICNNs on function schaffer2
 avg error (input): 88.67
 std error (input): 23.71
-avg error (output): 0.5016
-std error (output): 0.006686
+avg error (output): 0.4997
+std error (output): 0.02535
 -----------------------------------------
 Senario: ICNNs on function schaffer4
 avg error (input): 88.73
-std error (input): 23.77
-avg error (output): 0.2176
-std error (output): 0.01982
+std error (input): 23.78
+avg error (output): 0.2126
+std error (output): 0.02034
 -----------------------------------------
 Senario: ICNNs on function schwefel
-avg error (input): 645.2
-std error (input): 292
-avg error (output): 785.6
-std error (output): 325.8
+avg error (input): 675.5
+std error (input): 311.4
+avg error (output): 557.1
+std error (output): 235.5
 -----------------------------------------
 Senario: ICNNs on function shubert
-avg error (input): 9.242
-std error (input): 2.391
-avg error (output): 196.8
-std error (output): 12.06
+avg error (input): 9.255
+std error (input): 2.532
+avg error (output): 185.9
+std error (output): 1.305
 -----------------------------------------
