@@ -33,8 +33,8 @@ class FICNNs(nn.Module):
         init.kaiming_uniform_(self.z_last_W, a=math.sqrt(5))
     
     def forward(self,y):
-        z_1 = torch.relu(self.fc0_y(y))
-        z_2 = torch.relu(self.fc1_y(y)+F.linear(z_1, torch.exp(self.z1_W), None))
+        z_1 = F.softplus(self.fc0_y(y))
+        z_2 = F.softplus(self.fc1_y(y)+F.linear(z_1, torch.exp(self.z1_W), None))
         z_final = self.fc_last_y(y)+F.linear(z_2, torch.exp(self.z_last_W), None)
         return z_final
     
