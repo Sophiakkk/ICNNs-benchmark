@@ -1,15 +1,15 @@
 Summary for 2D benchmark with T=100, t=90, lr=1e-05:
 Senario: ICNNs on function ackley
-avg error (input): 27.84
-std error (input): 7.67
-avg error (output): 20.26
-std error (output): 1.109
+avg error (input): 28.16
+std error (input): 8.852
+avg error (output): 20.03
+std error (output): 1.543
 -----------------------------------------
 Senario: ICNNs on function bukin
-avg error (input): 7.779
-std error (input): 0.03725
-avg error (output): 18.4
-std error (output): 6.659
+avg error (input): 0.9963
+std error (input): 0.8976
+avg error (output): 24.26
+std error (output): 10.52
 -----------------------------------------
 Senario: ICNNs on function tray
 avg error (input): N/A
@@ -18,28 +18,28 @@ avg error (output): N/A
 std error (output): N/A
 -----------------------------------------
 Senario: ICNNs on function dropwave
-avg error (input): 4.526
-std error (input): 1.267
-avg error (output): 0.8684
-std error (output): 0.1331
+avg error (input): 4.552
+std error (input): 1.218
+avg error (output): 0.9031
+std error (output): 0.0966
 -----------------------------------------
 Senario: ICNNs on function eggholder
-avg error (input): 724.5
-std error (input): 314.1
-avg error (output): 838.4
-std error (output): 362.8
+avg error (input): 722.7
+std error (input): 317.7
+avg error (output): 857.1
+std error (output): 355.4
 -----------------------------------------
 Senario: ICNNs on function griewank
-avg error (input): 530.9
-std error (input): 141.4
-avg error (output): 76.07
-std error (output): 32.97
+avg error (input): 530.4
+std error (input): 141.1
+avg error (output): 76
+std error (output): 32.94
 -----------------------------------------
 Senario: ICNNs on function holdertable
-avg error (input): 14.1
-std error (input): 6.431
-avg error (output): 16.25
-std error (output): 4.366
+avg error (input): 13.26
+std error (input): 5.776
+avg error (output): 14.54
+std error (output): 5.241
 -----------------------------------------
 Senario: ICNNs on function langermann
 avg error (input): 7.54
@@ -48,28 +48,28 @@ avg error (output): 1.145
 std error (output): 0.2686
 -----------------------------------------
 Senario: ICNNs on function levy
-avg error (input): 6.86
-std error (input): 3.665
-avg error (output): 2.912
-std error (output): 3.182
+avg error (input): 6.285
+std error (input): 4.16
+avg error (output): 6.33
+std error (output): 6.263
 -----------------------------------------
 Senario: ICNNs on function levy13
-avg error (input): 1.666
-std error (input): 0.7035
-avg error (output): 4.428
-std error (output): 3.197
+avg error (input): 0.04602
+std error (input): 0.03197
+avg error (output): 0.3282
+std error (output): 0.9714
 -----------------------------------------
 Senario: ICNNs on function rastrigin
-avg error (input): 6.48
-std error (input): 0.3791
-avg error (output): 52.55
-std error (output): 3.579
+avg error (input): 7.839
+std error (input): 0.5887
+avg error (output): 68.46
+std error (output): 11.07
 -----------------------------------------
 Senario: ICNNs on function schaffer2
 avg error (input): 88.71
 std error (input): 23.7
-avg error (output): 0.5014
-std error (output): 0.02522
+avg error (output): 0.5007
+std error (output): 0.02515
 -----------------------------------------
 Senario: ICNNs on function schaffer4
 avg error (input): 88.76
@@ -78,14 +78,14 @@ avg error (output): 0.2128
 std error (output): 0.02012
 -----------------------------------------
 Senario: ICNNs on function schwefel
-avg error (input): 666.7
-std error (input): 297.2
-avg error (output): 633.4
-std error (output): 344.2
+avg error (input): 657.7
+std error (input): 295.2
+avg error (output): 561.3
+std error (output): 257.1
 -----------------------------------------
 Senario: ICNNs on function shubert
-avg error (input): 9.154
-std error (input): 2.347
-avg error (output): 179.6
-std error (output): 7.885
+avg error (input): 8.898
+std error (input): 2.655
+avg error (output): 172.6
+std error (output): 17.08
 -----------------------------------------

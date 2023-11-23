@@ -1,15 +1,15 @@
 Summary for 2D benchmark with T=100, t=60, lr=0.0001:
 Senario: ICNNs on function ackley
-avg error (input): 27.56
-std error (input): 6.991
-avg error (output): 20.32
-std error (output): 1.23
+avg error (input): 28.96
+std error (input): 7.407
+avg error (output): 20.35
+std error (output): 0.8491
 -----------------------------------------
 Senario: ICNNs on function bukin
-avg error (input): 1.09
-std error (input): 0.03196
-avg error (output): 19.72
-std error (output): 8.4
+avg error (input): 5.103
+std error (input): 0.02756
+avg error (output): 18.41
+std error (output): 2.63
 -----------------------------------------
 Senario: ICNNs on function tray
 avg error (input): N/A
@@ -18,28 +18,28 @@ avg error (output): N/A
 std error (output): N/A
 -----------------------------------------
 Senario: ICNNs on function dropwave
-avg error (input): 4.643
-std error (input): 1.3
-avg error (output): 0.8881
-std error (output): 0.1066
+avg error (input): 4.578
+std error (input): 1.396
+avg error (output): 0.8978
+std error (output): 0.08081
 -----------------------------------------
 Senario: ICNNs on function eggholder
-avg error (input): 722.2
-std error (input): 315.1
-avg error (output): 833.7
-std error (output): 335.4
+avg error (input): 724.3
+std error (input): 314.3
+avg error (output): 839.3
+std error (output): 365.3
 -----------------------------------------
 Senario: ICNNs on function griewank
-avg error (input): 529.5
-std error (input): 141.1
-avg error (output): 75.7
-std error (output): 33.08
+avg error (input): 531.2
+std error (input): 141.3
+avg error (output): 76.28
+std error (output): 33.01
 -----------------------------------------
 Senario: ICNNs on function holdertable
-avg error (input): 8.696
-std error (input): 4.336
-avg error (output): 27.83
-std error (output): 38.32
+avg error (input): 18.61
+std error (input): 5.661
+avg error (output): 12.04
+std error (output): 6.56
 -----------------------------------------
 Senario: ICNNs on function langermann
 avg error (input): 6.633
@@ -48,44 +48,44 @@ avg error (output): 1.075
 std error (output): 0.2972
 -----------------------------------------
 Senario: ICNNs on function levy
-avg error (input): 6.22
-std error (input): 2.973
-avg error (output): 2.666
-std error (output): 1.784
+avg error (input): 11.42
+std error (input): 2.093
+avg error (output): 90.21
+std error (output): 16.31
 -----------------------------------------
 Senario: ICNNs on function levy13
-avg error (input): 1.162
-std error (input): 0.0002692
-avg error (output): 1.747
-std error (output): 0.001554
+avg error (input): 18.02
+std error (input): 3.5
+avg error (output): 517.4
+std error (output): 152
 -----------------------------------------
 Senario: ICNNs on function rastrigin
-avg error (input): 1.373
-std error (input): 0.2942
-avg error (output): 13.6
-std error (output): 5
+avg error (input): 3.057
+std error (input): 1.407
+avg error (output): 24.27
+std error (output): 8.952
 -----------------------------------------
 Senario: ICNNs on function schaffer2
-avg error (input): 88.71
-std error (input): 23.7
-avg error (output): 0.5007
+avg error (input): 88.72
+std error (input): 23.69
+avg error (output): 0.5014
 std error (output): 0.02516
 -----------------------------------------
 Senario: ICNNs on function schaffer4
 avg error (input): 88.76
 std error (input): 23.77
 avg error (output): 0.2128
-std error (output): 0.02013
+std error (output): 0.02012
 -----------------------------------------
 Senario: ICNNs on function schwefel
-avg error (input): 685.5
-std error (input): 310.7
-avg error (output): 508
-std error (output): 232.1
+avg error (input): 665.1
+std error (input): 295.6
+avg error (output): 635.5
+std error (output): 370.1
 -----------------------------------------
 Senario: ICNNs on function shubert
-avg error (input): 12.76
-std error (input): 4.238
-avg error (output): 182.1
-std error (output): 6.137
+avg error (input): 13.17
+std error (input): 4.321
+avg error (output): 181.7
+std error (output): 6.564
 -----------------------------------------
