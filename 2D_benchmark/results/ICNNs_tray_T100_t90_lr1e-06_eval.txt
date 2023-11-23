@@ -7,5 +7,5 @@ seed 5: error (input) is 10.16961503626436, error (output) is inf
 seed 6: error (input) is 9.254491674588646, error (output) is inf
 seed 7: error (input) is 9.982617830936508, error (output) is inf
 seed 8: error (input) is 14.058565557619696, error (output) is inf
-seed 9: error (input) is 9.228322783146197, error (output) is inf
+seed 9: error (input) is 9.228325160022964, error (output) is inf
 seed 10: error (input) is 10.795166746247663, error (output) is inf
