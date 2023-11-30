@@ -134,6 +134,8 @@ class ICNNsTrainer(object):
                 # Perform gradient descent update
                 with torch.no_grad():
                     x_opt = x_new - self.GD_lr * grad
+                    x_opt[0][0] = torch.clamp(x_opt[0][0], self.xmin[0], self.xmax[0])
+                    x_opt[0][1] = torch.clamp(x_opt[0][1], self.xmin[1], self.xmax[1])
 
             print("optima is: ",x_opt)
             final_opt = x_opt.clone().detach().cpu().numpy()
