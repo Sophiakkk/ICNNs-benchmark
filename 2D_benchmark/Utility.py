@@ -285,20 +285,27 @@ class ICNNs_Evaluator(object):
     def evaluate(self):
         x = torch.tensor(self.initial_x, requires_grad=False, dtype=torch.float32)
         # perform gradient descent
-        # for i in range(self.total_iterations):
-        #     grad_x = self.get_grad(x)
-        #     # grad_x = grad_x/np.linalg.norm(grad_x)
-        #     x = x - self.step_size*grad_x
-        #     x[0][0] = torch.clamp(x[0][0], self.xmin[0], self.xmax[0])
-        #     x[0][1] = torch.clamp(x[0][1], self.xmin[1], self.xmax[1])
+        for _ in range(self.total_iterations):
+            grad_x = self.get_grad(x)
+            # grad_x = grad_x/np.linalg.norm(grad_x)
+            x = x - self.step_size*grad_x
+            x[0][0] = torch.clamp(x[0][0], self.xmin[0], self.xmax[0])
+            x[0][1] = torch.clamp(x[0][1], self.xmin[1], self.xmax[1])
         np_x = x.clone().detach().numpy().squeeze()
-        for i in range(self.total_iterations):
+        for _ in range(self.total_iterations):
             GD_grad_x = nd.Gradient(self.init_func)(np_x[0],np_x[1])
             np_x = np_x - self.step_size*GD_grad_x
             np_x[0] = np.clip(np_x[0], self.xmin[0], self.xmax[0])
             np_x[1] = np.clip(np_x[1], self.xmin[1], self.xmax[1])
-        x = torch.tensor(np_x, dtype=torch.float32).reshape(1,-1)
-        errorx = np.linalg.norm(x-self.x_opt)
-        errory = np.linalg.norm(self.init_func(x[0][0],x[0][1])- self.init_func(self.x_opt[0],self.x_opt[1]))
+        # x = torch.tensor(np_x, dtype=torch.float32).reshape(1,-1)
+        errorx = np.linalg.norm(np_x-self.x_opt, ord=1)
+        print("error (input) is: ", errorx)
+        print("optima is: ", np_x)
+        print("initial func value is: ", self.init_func(np_x[0],np_x[1]))
+        print("theoretical optima is: ", self.x_opt)
+        print("final func value is: ", self.init_func(self.x_opt[0],self.x_opt[1]))
+        errory = np.linalg.norm([self.init_func(np_x[0],np_x[1])- self.init_func(self.x_opt[0],self.x_opt[1])], ord=1)
+        print("error (input) is: ", errorx)
+        print("error (output) is: ", errory)
         with open("./results/{}_{}_T{}_t{}_lr{}_eval.txt".format(self.method_name,self.init_func_name,self.tmax,self.t,self.lr), "a") as f:
             f.write("seed {}: error (input) is {}, error (output) is {}\n".format(self.seed, errorx, errory))
