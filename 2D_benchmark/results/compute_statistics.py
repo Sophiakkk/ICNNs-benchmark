@@ -20,20 +20,26 @@ for tmax in T_list:
                     metric_list_x = []
                     metric_list_y = []
                     with open('{}_{}_T{}_t{}_lr{}_eval.txt'.format(method, func, tmax,t, lr), 'r') as file:
-                        for line in file:
+                        for i, line in enumerate(file):
                             if len(re.findall("\d+\.\d+", line))==2:
                                 metric_list_x.append(float(re.findall("\d+\.\d+", line)[0]))
                                 metric_list_y.append(float(re.findall("\d+\.\d+", line)[1]))
-                        if len(metric_list_x) == 0:
-                            avg_error_x = 'N/A'
-                            std_error_x = 'N/A'
-                            avg_error_y = 'N/A'
-                            std_error_y = 'N/A'
-                        else:
+                            elif i >1:
+                                line_char = line.split()
+                                metric_list_x.append(float(line_char[5][:-1]))
+                                metric_list_y.append(float(line_char[9]))
+                        if math.inf not in metric_list_x:
                             avg_error_x = '%.4g'%np.mean(metric_list_x)
                             std_error_x = '%.4g'%np.std(metric_list_x)
+                        else:
+                            avg_error_x = 'inf'
+                            std_error_x = 'inf'
+                        if math.inf not in metric_list_y:
                             avg_error_y = '%.4g'%np.mean(metric_list_y)
                             std_error_y = '%.4g'%np.std(metric_list_y)
+                        else:
+                            avg_error_y = 'inf'
+                            std_error_y = 'inf'
                     with open('summary_2d_T{}_t{}_lr{}.txt'.format(tmax,t,lr), 'a') as file:
                         file.writelines('Senario: ' + method + ' on function ' + func + '\n')
                         file.writelines('avg error (input): ' + avg_error_x + '\n')
