@@ -1,4 +1,4 @@
 Method: ICNNs
 Function: schaffer2
 Max Timestep: 100
-Running Time: 9377.665739811026
+Running Time: 3620.083996132016

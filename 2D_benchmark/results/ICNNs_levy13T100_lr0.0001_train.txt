@@ -1,4 +1,4 @@
 Method: ICNNs
 Function: levy13
 Max Timestep: 100
-Running Time: 9204.456800624961
+Running Time: 3735.100789958611

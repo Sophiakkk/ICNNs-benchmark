@@ -1,4 +1,4 @@
 Method: ICNNs
 Function: shubert
 Max Timestep: 100
-Running Time: 9408.034506411059
+Running Time: 3619.7699946649373
