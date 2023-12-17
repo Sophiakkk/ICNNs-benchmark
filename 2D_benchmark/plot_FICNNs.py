@@ -43,5 +43,4 @@ for k in range(T//10+1):
     ax.set_xlabel('x2')
     ax.set_ylabel('x1')
     ax.set_title("ICNNs on {} at t = {} with lr{}".format(func_name,t,learning_rate))
-    # plt.savefig("./figures/ICNNs_{}_T{}_t{}_lr{}.png".format(func_name,T,t,learning_rate))
-    plt.show()
+    plt.savefig("./figures/ICNNs_{}_T{}_t{}_lr{}.png".format(func_name,T,t,learning_rate))
