@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-m","--method_name", type = str, default = "ICNNs")
 parser.add_argument("-f","--func_name", type = str, default = "ackley")
 parser.add_argument("-T", "--max_timestep", type = int, default = 100)
-parser.add_argument("-lr", "--learning_rate", type = float, default = 1e-6)
+parser.add_argument("-lr", "--learning_rate", type = float, default = 0.001)
 args = parser.parse_args()
 
 # Parameters
@@ -20,7 +20,7 @@ T = args.max_timestep
 learning_rate = args.learning_rate
 
 for k in range(T//10+1):
-    t = k*10
+    t = k*10    
     model = FICNNs()
     model.load_state_dict(torch.load("./models/ICNNs_{}_T{}_t{}_lr{}.pth".format(func_name, T, t, learning_rate),
                                     map_location=torch.device('cpu')))
@@ -36,9 +36,12 @@ for k in range(T//10+1):
 
     fig = plt.figure()
     ax = plt.axes(projection='3d')
-    ax.plot_surface(X1,X2,z.reshape(100,100),rstride=1, cstride=1,
+    ax.plot_surface(X2,X1,z.reshape(100,100),rstride=1, cstride=1,
                     cmap='viridis', edgecolor='none')
-    ax.set_xlim(x_range[0][0],x_range[0][1])
-    ax.set_ylim(x_range[1][0],x_range[1][1])
+    ax.set_xlim(x_range[1][1],x_range[1][0])
+    ax.set_ylim(x_range[0][0],x_range[0][1])
+    ax.set_xlabel('x2')
+    ax.set_ylabel('x1')
     ax.set_title("ICNNs on {} at t = {} with lr{}".format(func_name,t,learning_rate))
-    plt.savefig("./figures/ICNNs_{}_T{}_t{}_lr{}.png".format(func_name,T,t,learning_rate))
+    # plt.savefig("./figures/ICNNs_{}_T{}_t{}_lr{}.png".format(func_name,T,t,learning_rate))
+    plt.show()
