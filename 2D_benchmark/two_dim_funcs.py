@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from optimizers import *
 
 # function list
 function_list = ['ackley', 'holdertable', 'tray', 'bukin', 'dropwave', 
@@ -124,26 +125,30 @@ def pick_function(function):
         f0 = shubert
     return f0
 
-# x = np.linspace(0,10,100)
-# y = np.linspace(0,10,100)
-# X,Y = np.meshgrid(x,y)
-# x_vec = X.ravel().reshape(-1,1)
-# y_vec = Y.ravel().reshape(-1,1)
-# print(x_vec.shape)
-# input = np.hstack((x_vec,y_vec))
-# print(input.shape)
-# Z = langermann(x_vec,y_vec)
-# Z = Z.reshape(X.shape)
+# Test function
+# func_name = 'bukin'
+# x_range = np.array(domain_range[func_name])
+# x1 = np.linspace(x_range[0][0],x_range[0][1],100)
+# x2 = np.linspace(x_range[1][0],x_range[1][1],100)
+# X1, X2 = np.meshgrid(x1, x2)
+# x1_vec = X1.ravel().reshape(-1,1)
+# x2_vec = X2.ravel().reshape(-1,1)
+# Z = bukin(x1_vec,x2_vec)
+# # Z = Z.reshape(X.shape)
 
-# # test optimizer
-# input = np.array([9.6810707,0.6666515])
-# # input = np.array([2.00299219,1.006096])
-# print(langermann(input[0],input[1]))
+# # # test optimizer
+# # input = np.array([9.6810707,0.6666515])
+# # # input = np.array([2.00299219,1.006096])
+# # print(langermann(input[0],input[1]))
 
 # # test plot
 # fig = plt.figure()
 # ax = plt.axes(projection='3d')
-# ax.set_xlim(10,0)
-# ax.plot_surface(X,Y,Z, rstride=1, cstride=1,
-#                 cmap='viridis',edgecolor='none')
+# ax.plot_surface(X2,X1,Z.reshape(100,100),rstride=1, cstride=1,
+#                 cmap='viridis', edgecolor='none')
+# ax.set_xlim(x_range[1][1],x_range[1][0])
+# ax.set_ylim(x_range[0][0],x_range[0][1])
+# ax.set_xlabel('x2')
+# ax.set_ylabel('x1')
+# ax.set_title("bukin function")
 # plt.show()
