@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#SBATCH --job-name=eval_2d_benchmarks
-#SBATCH --output=eval_2d_benchmarks.log
-#SBATCH --error=eval_2d_benchmarks.err
+#SBATCH --job-name=eval_langermann
+#SBATCH --output=eval_langermann.log
+#SBATCH --error=eval_langermann.err
 #SBATCH --mem=8GB
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:2
-#SBATCH --array=1-75
+#SBATCH --array=1-5
 
 config=langermann_config.txt
 
