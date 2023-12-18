@@ -33,8 +33,8 @@ class FICNNs(nn.Module):
         init.kaiming_uniform_(self.z_last_W, a=math.sqrt(5))
     
     def forward(self,y):
-        z_1 = F.softplus(self.fc0_y(y))
-        z_2 = F.softplus(self.fc1_y(y)+F.linear(z_1, torch.exp(self.z1_W), None))
+        z_1 = F.relu(self.fc0_y(y))
+        z_2 = F.relu(self.fc1_y(y)+F.linear(z_1, torch.exp(self.z1_W), None))
         z_final = self.fc_last_y(y)+F.linear(z_2, torch.exp(self.z_last_W), None)
         return z_final
     
@@ -113,7 +113,7 @@ class ICNNsTrainer(object):
                     self.optimizer.zero_grad()
                     u = self.net(self.features)
                     u_local_min = self.net(x_local_min)
-                    loss = torch.mean(F.softplus(u-self.u0),dim=0) + F.softplus(u0_x_local_min-u_local_min) # change max(x,0) to softplus
+                    loss = torch.mean(torch.maximum(u-self.u0,torch.tensor(0).to(self.device)),dim=0) + torch.maximum(u0_x_local_min-u_local_min,torch.tensor(0).to(self.device))
                     loss.backward()
                     self.optimizer.step()
                 
