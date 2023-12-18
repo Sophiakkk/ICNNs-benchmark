@@ -1,0 +1,6 @@
+ArrayTaskID method func lr T
+1 ICNNs langermann 0.001 100
+2 ICNNs langermann 0.0001 100
+3 ICNNs langermann 1e-05 100
+4 ICNNs langermann 1e-06 100
+5 ICNNs langermann 1e-07 100
