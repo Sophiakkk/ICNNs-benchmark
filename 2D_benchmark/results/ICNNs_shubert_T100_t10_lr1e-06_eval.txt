@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with shubert T 100 t10 lr1e-06:
+seed 1: error (input) is 5.0193480870804885, error (output) is 184.1166478678231
+seed 2: error (input) is 9.334038554322259, error (output) is 185.79733898737229
+seed 3: error (input) is 4.4179228762142175, error (output) is 186.73089727101143
+seed 4: error (input) is 8.925143924247005, error (output) is 186.73090857088494
+seed 5: error (input) is 9.370706707703986, error (output) is 204.53187362901525
+seed 6: error (input) is 8.215020999614461, error (output) is 170.66195512831473
+seed 7: error (input) is 10.086814461116797, error (output) is 186.7309113084805
+seed 8: error (input) is 11.3546455057494, error (output) is 186.73093555538668
+seed 9: error (input) is 8.419372915318373, error (output) is 186.73091046044675
+seed 10: error (input) is 10.33308486571915, error (output) is 185.79733898736492

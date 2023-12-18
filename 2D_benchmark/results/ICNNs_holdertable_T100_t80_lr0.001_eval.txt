@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with holdertable T 100 t80 lr0.001:
+seed 1: error (input) is 9.744900043856328, error (output) is 17.607131546415722
+seed 2: error (input) is 18.945008329346475, error (output) is 10.548853188867279
+seed 3: error (input) is 11.484170532945098, error (output) is 19.208450191457178
+seed 4: error (input) is 14.100008073015442, error (output) is 17.361982155765812
+seed 5: error (input) is 8.73108337954712, error (output) is 18.068020549313736
+seed 6: error (input) is 18.40397069730572, error (output) is 6.940946297840247
+seed 7: error (input) is 12.50985797895715, error (output) is 19.14064650012121
+seed 8: error (input) is 5.713034651548869, error (output) is 14.87433834985055
+seed 9: error (input) is 20.44822154284569, error (output) is 14.832336117836654
+seed 10: error (input) is 19.664590403985173, error (output) is 1.1877868230284747

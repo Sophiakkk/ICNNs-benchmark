@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with rastrigin T 100 t60 lr1e-06:
+seed 1: error (input) is 1.367398548912788, error (output) is 2.624122211877678
+seed 2: error (input) is 1.4081060961240082, error (output) is 1.9903321899679156
+seed 3: error (input) is 1.3710969819976264, error (output) is 2.5110988540384582
+seed 4: error (input) is 1.3911238998429978, error (output) is 2.091788494592011
+seed 5: error (input) is 1.356445644507628, error (output) is 3.023361152374262
+seed 6: error (input) is 1.399627540239663, error (output) is 2.0120622489529154
+seed 7: error (input) is 1.3571798789358551, error (output) is 2.9936014665964503
+seed 8: error (input) is 1.3692107842805672, error (output) is 2.5673593603327216
+seed 9: error (input) is 1.3690171980879575, error (output) is 2.5732963264788093
+seed 10: error (input) is 1.4158560163930465, error (output) is 2.020256978566014

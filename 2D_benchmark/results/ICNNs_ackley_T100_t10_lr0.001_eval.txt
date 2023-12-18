@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with ackley T 100 t10 lr0.001:
+seed 1: error (input) is 18.84020501729352, error (output) is 20.2967039499281
+seed 2: error (input) is 30.22507298712631, error (output) is 20.212175077496404
+seed 3: error (input) is 16.02039909362793, error (output) is 17.935825826641604
+seed 4: error (input) is 27.49629444040006, error (output) is 20.433461098521764
+seed 5: error (input) is 34.000100671586026, error (output) is 20.957571659197868
+seed 6: error (input) is 23.785904829195463, error (output) is 19.36571864783707
+seed 7: error (input) is 37.03252160120592, error (output) is 21.010075659386214
+seed 8: error (input) is 38.82167776742761, error (output) is 21.4015916324802
+seed 9: error (input) is 43.41469551129233, error (output) is 22.030820601818732
+seed 10: error (input) is 32.62010294966624, error (output) is 21.50657392356825
