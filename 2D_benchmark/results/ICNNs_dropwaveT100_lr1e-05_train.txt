@@ -1,4 +1,0 @@
-Method: ICNNs
-Function: dropwave
-Max Timestep: 100
-Running Time: 3636.953006077558
