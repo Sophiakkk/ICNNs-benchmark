@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with langermann T 100 t20 lr0.0001:
+seed 1: error (input) is 9.775336408419921, error (output) is 1.0809052676895525
+seed 2: error (input) is 5.13461843420415, error (output) is 0.9456599272788164
+seed 3: error (input) is 9.125110579699008, error (output) is 1.0812430556350296
+seed 4: error (input) is 6.4987540899346286, error (output) is 0.9457684307210593
+seed 5: error (input) is 11.782358193549726, error (output) is 1.0809384566080043
+seed 6: error (input) is 5.312908413844131, error (output) is 0.9458443614752452
+seed 7: error (input) is 11.753192021363757, error (output) is 1.080938453743498
+seed 8: error (input) is 9.790095945378548, error (output) is 1.080943225997088
+seed 9: error (input) is 9.986612368426448, error (output) is 1.0809428458112373
+seed 10: error (input) is 4.725238941361896, error (output) is 1.009226381958038

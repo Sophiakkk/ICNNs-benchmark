@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with langermann T 100 t100 lr1e-05:
+seed 1: error (input) is 6.539382601614269, error (output) is 1.0605725152542105
+seed 2: error (input) is 3.783425068139746, error (output) is 1.0650283378340017
+seed 3: error (input) is 5.736517694539018, error (output) is 1.0155704104044332
+seed 4: error (input) is 3.315624803770909, error (output) is 0.9595990723096868
+seed 5: error (input) is 8.93269641107627, error (output) is 1.0803022071872357
+seed 6: error (input) is 0.8470956683863301, error (output) is 1.2231834975308862
+seed 7: error (input) is 9.380439519320033, error (output) is 1.0809342320007451
+seed 8: error (input) is 7.489898301985743, error (output) is 0.8381716370388372
+seed 9: error (input) is 8.576265434950303, error (output) is 1.1084597265145812
+seed 10: error (input) is 0.29763214086660045, error (output) is 0.5021246459479666
