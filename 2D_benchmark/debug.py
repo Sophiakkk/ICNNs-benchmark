@@ -52,3 +52,9 @@ computed by float32).
 The truncation errors are accumulated during the forward propagation, and the Neural Net output is not accurate.
 Therefore, the plot looks non-convex.
 """
+
+# Why softplus is not good?
+"""
+The definition is softplus(x) = log(1 + exp(x)). Weirdly, the calculus derivation of softplus(x) is logsig(x) = 1.0 / (1.0 + exp(-x)).
+The derivative of softplus(x) is always smaller than 1.0, this may lead to the vanishing gradient problem.
+"""
