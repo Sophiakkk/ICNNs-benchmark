@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with levy13 T 100 t50 lr0.0001:
+seed 1: error (input) is 2.6661750829011104, error (output) is 11.62525398471728
+seed 2: error (input) is 1.0001479921193834, error (output) is 1.914135327239766
+seed 3: error (input) is 2.6649629057738946, error (output) is 11.654680449764918
+seed 4: error (input) is 2.6652235686447, error (output) is 11.648363498825939
+seed 5: error (input) is 2.8128087121161838, error (output) is 15.492394418469226
+seed 6: error (input) is 0.986509224289111, error (output) is 1.5465082963975068
+seed 7: error (input) is 3.021165661492113, error (output) is 9.132253262300546
+seed 8: error (input) is 2.6643710081147556, error (output) is 11.669009488270524
+seed 9: error (input) is 2.6647719861124446, error (output) is 11.659305658537455
+seed 10: error (input) is 1.0107077056522407, error (output) is 1.6857365003885765

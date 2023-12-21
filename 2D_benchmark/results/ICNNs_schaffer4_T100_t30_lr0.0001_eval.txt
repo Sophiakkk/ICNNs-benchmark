@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with schaffer4 T 100 t30 lr0.0001:
+seed 1: error (input) is 46.69596309939113, error (output) is 0.18735998286392858
+seed 2: error (input) is 95.44739919177874, error (output) is 0.21228311570376351
+seed 3: error (input) is 43.221249184954566, error (output) is 0.26936998882025504
+seed 4: error (input) is 95.12122342503807, error (output) is 0.2052671578209705
+seed 5: error (input) is 91.92426299167035, error (output) is 0.21276713922412321
+seed 6: error (input) is 86.59517933471108, error (output) is 0.20443722941291448
+seed 7: error (input) is 100.51848820495323, error (output) is 0.21132584216772615
+seed 8: error (input) is 120.55560679986792, error (output) is 0.20934028292457246
+seed 9: error (input) is 96.67297106204339, error (output) is 0.20683530730314342
+seed 10: error (input) is 110.76709108484324, error (output) is 0.21015014335862575

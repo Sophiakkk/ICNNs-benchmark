@@ -1,0 +1,1 @@
+Evaluation results for ICNNs with langermann T 100 t0 lr1e-07:

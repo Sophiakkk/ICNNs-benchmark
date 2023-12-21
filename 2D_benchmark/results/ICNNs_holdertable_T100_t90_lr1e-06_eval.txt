@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with holdertable T 100 t90 lr1e-06:
+seed 1: error (input) is 11.117614669682517, error (output) is 18.579029889506465
+seed 2: error (input) is 21.824836772472963, error (output) is 11.243714922974963
+seed 3: error (input) is 8.158958593689617, error (output) is 19.139954749997354
+seed 4: error (input) is 9.979262094921076, error (output) is 14.719641320871535
+seed 5: error (input) is 13.229011607607976, error (output) is 19.207166210949858
+seed 6: error (input) is 12.807338403072263, error (output) is 13.534202558966182
+seed 7: error (input) is 16.595039140148398, error (output) is 11.200440252984182
+seed 8: error (input) is 0.21849985316701548, error (output) is 0.4968770489422525
+seed 9: error (input) is 21.265406402038447, error (output) is 19.20847047412442
+seed 10: error (input) is 19.92399084745048, error (output) is 8.693953728493748

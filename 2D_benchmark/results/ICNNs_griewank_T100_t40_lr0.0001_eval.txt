@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with griewank T 100 t40 lr0.0001:
+seed 1: error (input) is 281.8249433122918, error (output) is 20.96092774186245
+seed 2: error (input) is 571.3063488398848, error (output) is 82.70783959365004
+seed 3: error (input) is 257.18328993303237, error (output) is 16.62444318871421
+seed 4: error (input) is 558.3504605142425, error (output) is 79.71066926328916
+seed 5: error (input) is 554.5143400404136, error (output) is 77.02916626524966
+seed 6: error (input) is 508.6366241737531, error (output) is 65.14016904066904
+seed 7: error (input) is 606.4311715466754, error (output) is 92.47032925950072
+seed 8: error (input) is 715.8579666439877, error (output) is 128.14781172472655
+seed 9: error (input) is 584.8929907465754, error (output) is 86.91839166549238
+seed 10: error (input) is 659.7355724763041, error (output) is 109.82449905852353

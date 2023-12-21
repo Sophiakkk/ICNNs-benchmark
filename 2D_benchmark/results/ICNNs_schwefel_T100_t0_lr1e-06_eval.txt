@@ -1,0 +1,11 @@
+Evaluation results for ICNNs with schwefel T 100 t0 lr1e-06:
+seed 1: error (input) is 597.9767903714943, error (output) is 683.3067398153211
+seed 2: error (input) is 965.0536413579209, error (output) is 1255.0941164575484
+seed 3: error (input) is 418.5655695675007, error (output) is 573.1927375875379
+seed 4: error (input) is 398.2537163362988, error (output) is 442.26588631495486
+seed 5: error (input) is 726.7661554611207, error (output) is 772.6715698324109
+seed 6: error (input) is 542.9356010969252, error (output) is 299.51537323817263
+seed 7: error (input) is 745.9688668905596, error (output) is 562.6942596517468
+seed 8: error (input) is 70.99665735194291, error (output) is 512.4113540731336
+seed 9: error (input) is 1060.1740003663538, error (output) is 583.9368286214734
+seed 10: error (input) is 944.1214881859408, error (output) is 466.65670777186403
